@@ -1,36 +1,56 @@
-<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">Sequential Search - Mencari Nilai 40</text>
+  
   <!-- Array boxes -->
-  <rect x="50" y="60" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
-  <rect x="150" y="60" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
-  <rect x="250" y="60" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
-  <rect x="350" y="60" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
-  <rect x="450" y="60" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="50" y="70" width="80" height="50" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="140" y="70" width="80" height="50" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="230" y="70" width="80" height="50" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="320" y="70" width="80" height="50" fill="#90EE90" stroke="#2C5F7C" stroke-width="3"/>
+  <rect x="410" y="70" width="80" height="50" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="500" y="70" width="80" height="50" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="590" y="70" width="80" height="50" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
   
   <!-- Values -->
-  <text x="100" y="95" text-anchor="middle" font-size="24" font-weight="bold" fill="#2C5F7C">85</text>
-  <text x="200" y="95" text-anchor="middle" font-size="24" font-weight="bold" fill="#2C5F7C">92</text>
-  <text x="300" y="95" text-anchor="middle" font-size="24" font-weight="bold" fill="#2C5F7C">78</text>
-  <text x="400" y="95" text-anchor="middle" font-size="24" font-weight="bold" fill="#2C5F7C">88</text>
-  <text x="500" y="95" text-anchor="middle" font-size="24" font-weight="bold" fill="#2C5F7C">95</text>
+  <text x="90" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="180" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">25</text>
+  <text x="270" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">33</text>
+  <text x="360" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">40</text>
+  <text x="450" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">55</text>
+  <text x="540" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">67</text>
+  <text x="630" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">78</text>
   
   <!-- Index labels -->
-  <text x="100" y="145" text-anchor="middle" font-size="16" fill="#555">Index 0</text>
-  <text x="200" y="145" text-anchor="middle" font-size="16" fill="#555">Index 1</text>
-  <text x="300" y="145" text-anchor="middle" font-size="16" fill="#555">Index 2</text>
-  <text x="400" y="145" text-anchor="middle" font-size="16" fill="#555">Index 3</text>
-  <text x="500" y="145" text-anchor="middle" font-size="16" fill="#555">Index 4</text>
+  <text x="90" y="140" text-anchor="middle" font-size="14" fill="#555">0</text>
+  <text x="180" y="140" text-anchor="middle" font-size="14" fill="#555">1</text>
+  <text x="270" y="140" text-anchor="middle" font-size="14" fill="#555">2</text>
+  <text x="360" y="140" text-anchor="middle" font-size="14" fill="#555">3</text>
+  <text x="450" y="140" text-anchor="middle" font-size="14" fill="#555">4</text>
+  <text x="540" y="140" text-anchor="middle" font-size="14" fill="#555">5</text>
+  <text x="630" y="140" text-anchor="middle" font-size="14" fill="#555">6</text>
   
-  <!-- Array name -->
-  <text x="20" y="95" text-anchor="start" font-size="18" font-weight="bold" fill="#2C5F7C">nilai</text>
-  <line x1="45" y1="90" x2="50" y2="90" stroke="#2C5F7C" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Search arrows -->
+  <path d="M 90 160 L 90 180" stroke="#FF6B6B" stroke-width="2" fill="none" marker-end="url(#arrow-red)"/>
+  <path d="M 180 160 L 180 180" stroke="#FF6B6B" stroke-width="2" fill="none" marker-end="url(#arrow-red)"/>
+  <path d="M 270 160 L 270 180" stroke="#FF6B6B" stroke-width="2" fill="none" marker-end="url(#arrow-red)"/>
+  <path d="M 360 160 L 360 180" stroke="#00CC00" stroke-width="3" fill="none" marker-end="url(#arrow-green)"/>
   
-  <!-- Title -->
-  <text x="300" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">Array Integer dengan 5 Elemen</text>
+  <!-- Labels -->
+  <text x="90" y="205" text-anchor="middle" font-size="12" fill="#FF6B6B">Cek</text>
+  <text x="180" y="205" text-anchor="middle" font-size="12" fill="#FF6B6B">Cek</text>
+  <text x="270" y="205" text-anchor="middle" font-size="12" fill="#FF6B6B">Cek</text>
+  <text x="360" y="205" text-anchor="middle" font-size="12" fill="#00CC00" font-weight="bold">Ketemu!</text>
   
-  <!-- Arrow marker definition -->
+  <!-- Legend -->
+  <text x="50" y="235" font-size="14" fill="#555">✓ Nilai ditemukan pada indeks 3 setelah 4 kali pemeriksaan</text>
+  
+  <!-- Arrow markers -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#2C5F7C" />
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF6B6B" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00CC00" />
     </marker>
   </defs>
 </svg>
