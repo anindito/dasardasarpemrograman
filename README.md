@@ -116,7 +116,7 @@ cd silabus-ddp
 ```
 
 ### 2️⃣ Baca Silabus Lengkap
-Buka file [`Silabus.md`](Silabus.md) untuk melihat detail lengkap setiap pertemuan.
+Buka file [`silabus.md`](silabus.md) untuk melihat detail lengkap setiap pertemuan.
 
 ### 3️⃣ Follow Updates
 Tekan tombol **⭐ Star** dan **👁️ Watch** untuk mendapatkan notifikasi update materi baru.
