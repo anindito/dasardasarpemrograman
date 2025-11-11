@@ -5,7 +5,7 @@ Repositori ini berisi materi pembelajaran lengkap untuk Pertemuan 9 mata kuliah 
 ## 📁 Struktur File
 
 ```
-pertemuan-9/
+pertemuan-09/
 ├── Bahan_Ajar_Pertemuan_9.md    # Materi utama dalam format Markdown
 ├── images/                       # Folder berisi diagram SVG
 │   ├── array_visualization.svg   # Visualisasi array dalam memori
