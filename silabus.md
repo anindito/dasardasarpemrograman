@@ -320,15 +320,14 @@
 2. Akses dan manipulasi elemen array
 3. Array sebagai parameter fungsi
 4. Algoritma pencarian pada array (sequential search)
-5. Algoritma pengurutan dasar (bubble sort, selection sort)
-6. Array of characters dan C-string
+
 
 **Metode Pembelajaran:** Ceramah, demonstrasi, latihan pemrograman
 
 **Latihan dan Contoh:**
 - Program menghitung statistik data dalam array
 - Program pencarian nilai dalam array
-- Program pengurutan array dengan beberapa metode
+- Program pengurutan array dengan metode sederhana
 
 **Referensi:**
 - C++ How to Program, Ch. 7
@@ -426,8 +425,7 @@
 - Program data mahasiswa menggunakan struct
 - Program sistem inventory dengan array of struct
 - Program penjadwalan menggunakan nested struct
-- Program demonstrasi union untuk memory efficiency
-- Program dengan typedef untuk readability
+
 
 **Referensi:**
 - C++ How to Program, Ch. 10
@@ -604,8 +602,7 @@
 - Program calculator dengan exception handling untuk division by zero
 - Program validasi input dengan exception handling
 - Program CRUD sederhana dengan file sebagai database dan comprehensive error handling
-- Program yang mendemonstrasikan stack unwinding
-- Program dengan custom exception classes
+
 
 **Referensi:**
 - C++ How to Program, Ch. 14, 16, 17
@@ -650,10 +647,6 @@
 4. Mahasiswa wajib mempraktikkan materi yang diajarkan dengan latihan mandiri
 
 ---
-
-
-
-
 
 - **CPMK 5**: 2 pertemuan (Pertemuan 14, 15)
 
