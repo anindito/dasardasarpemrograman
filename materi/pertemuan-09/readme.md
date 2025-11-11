@@ -56,18 +56,7 @@ Setelah mempelajari materi ini, mahasiswa diharapkan dapat:
 3. Kerjakan soal latihan untuk praktek
 4. Diskusikan soal diskusi dengan teman
 
-## 🖼️ Tentang Diagram SVG
 
-Diagram SVG dapat:
-- Ditampilkan langsung di GitHub
-- Digunakan dalam presentasi
-- Diedit dengan text editor
-- Dikonversi ke format lain (PNG, PDF)
-
-### Menggunakan SVG di Markdown:
-```markdown
-![Deskripsi](images/nama_file.svg)
-```
 
 ## 🔗 CPMK yang Dicakup
 
@@ -75,11 +64,7 @@ Diagram SVG dapat:
 
 **Sub-CPMK 3.2:** Mahasiswa dapat mendeklarasikan dan menggunakan array satu dimensi serta menerapkan algoritma dasar pada array
 
-## 📝 Catatan
 
-- Semua kode menggunakan C++ standar (C++11 atau lebih baru)
-- Contoh kode telah diuji dan dapat dijalankan
-- Materi disesuaikan dengan kurikulum Dasar-Dasar Pemrograman
 
 ## 📚 Referensi Utama
 
