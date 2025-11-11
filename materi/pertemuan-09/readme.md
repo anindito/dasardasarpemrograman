@@ -2,17 +2,6 @@
 
 Repositori ini berisi materi pembelajaran lengkap untuk Pertemuan 9 mata kuliah Dasar-Dasar Pemrograman.
 
-## 📁 Struktur File
-
-```
-pertemuan-09/
-├── Bahan_Ajar_Pertemuan_9.md    # Materi utama dalam format Markdown
-├── images/                       # Folder berisi diagram SVG
-│   ├── array_visualization.svg   # Visualisasi array dalam memori
-│   └── sequential_search.svg     # Ilustrasi proses sequential search
-└── README.md                     # File ini
-```
-
 ## 📚 Konten Materi
 
 ### Topik yang Dibahas:
@@ -23,14 +12,6 @@ pertemuan-09/
 5. **Operasi Dasar pada Array** - Min/max, statistik, reverse, copy, merge
 6. **Algoritma Pencarian** - Sequential search dan variasinya
 7. **Studi Kasus** - Aplikasi nyata menggunakan array
-
-### Fitur Materi:
-✅ **25 contoh kode lengkap** dengan penjelasan  
-✅ **2 diagram SVG** untuk visualisasi konsep  
-✅ **8 soal latihan** dari tingkat dasar hingga lanjutan  
-✅ **8 soal diskusi** untuk pemahaman konseptual  
-✅ **Narasi mengalir** dengan bahasa tingkat SMA  
-✅ **Referensi lengkap** dari buku-buku standar
 
 ## 🎯 Tujuan Pembelajaran
 
