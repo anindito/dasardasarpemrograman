@@ -58,6 +58,23 @@ int main() {
 
 Perhatikan bahwa pointer yang baru dideklarasikan tanpa inisialisasi berisi nilai acak yang berbahaya. Menggunakan pointer yang tidak diinisialisasi dapat menyebabkan program crash. Oleh karena itu, praktik terbaik adalah selalu menginisialisasi pointer, minimal dengan `nullptr` jika belum siap untuk menunjuk ke variabel tertentu.
 
+### 11.2.4 Visualisasi Pointer dan Alamat Memori
+
+Untuk memudahkan pemahaman tentang konsep pointer, perhatikan diagram berikut yang menunjukkan hubungan antara variabel, pointer, dan alamat memori:
+
+![Visualisasi Pointer dan Alamat Memori](images/pointer_visualization.svg)
+
+*Gambar 11.1: Visualisasi Pointer dan Alamat Memori*
+
+Diagram di atas menunjukkan:
+- Variabel `x` dengan nilai 42 disimpan di alamat memori 0x1000
+- Pointer `ptr` menyimpan alamat 0x1000 (alamat dari variabel `x`)
+- Pointer `ptr` sendiri juga memiliki alamat memori yaitu 0x2000
+- Operator `&x` menghasilkan alamat memori dari `x`
+- Operator `*ptr` mengakses nilai yang ada di alamat yang ditunjuk oleh `ptr`
+
+Dengan visualisasi ini, kita dapat melihat bahwa pointer sebenarnya adalah variabel yang "menunjuk" ke lokasi memori lain. Panah dalam diagram merepresentasikan hubungan "menunjuk ke" antara pointer dan variabel yang ditunjuknya.
+
 ## 11.3 Operator Pointer
 
 ### 11.3.1 Operator Address-of (&)
@@ -295,6 +312,30 @@ int main() {
 Dalam pemrograman, ada dua jenis alokasi memori: statik dan dinamis. Alokasi memori statik terjadi pada compile time dimana ukuran dan lifetime variabel sudah ditentukan. Contohnya adalah variabel lokal dan array dengan ukuran tetap. Sebaliknya, alokasi memori dinamis terjadi pada runtime dimana kita dapat mengalokasikan dan membebaskan memori sesuai kebutuhan program.
 
 Memori komputer dibagi menjadi beberapa segmen: stack dan heap. Stack digunakan untuk variabel lokal dan memiliki ukuran terbatas serta otomatis dibersihkan ketika fungsi selesai. Heap adalah area memori yang lebih besar dan digunakan untuk alokasi dinamis. Memori di heap harus di-manage secara manual oleh programmer: dialokasikan dengan `new` dan dibebaskan dengan `delete`.
+
+![Memory Layout: Stack vs Heap](images/memory_layout.svg)
+
+*Gambar 11.2: Memory Layout - Stack vs Heap*
+
+Diagram di atas menunjukkan perbedaan mendasar antara stack dan heap memory:
+
+**Stack Memory:**
+- Ukuran terbatas (biasanya 1-8 MB)
+- Akses sangat cepat
+- Manajemen otomatis (automatic cleanup)
+- Menggunakan struktur LIFO (Last In First Out)
+- Digunakan untuk variabel lokal dan parameter fungsi
+- Contoh: `int x = 10;`, `int arr[100];`
+
+**Heap Memory:**
+- Ukuran jauh lebih besar (hingga GB)
+- Akses lebih lambat dibanding stack
+- Manajemen manual (programmer bertanggung jawab)
+- Tidak ada urutan khusus (fragmentasi mungkin terjadi)
+- Digunakan untuk alokasi dinamis
+- Contoh: `int* ptr = new int(42);`, `int* arr = new int[n];`
+
+Pointer yang dideklarasikan di stack dapat menunjuk ke memori yang dialokasikan di heap. Ini memungkinkan fleksibilitas dalam pengelolaan memori sambil tetap mempertahankan referensi yang mudah diakses di stack.
 
 ### 11.5.2 Operator new dan delete
 
