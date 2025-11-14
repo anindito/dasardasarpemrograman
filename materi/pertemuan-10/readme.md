@@ -25,14 +25,6 @@ pertemuan-10/
 6. **Aplikasi Praktis** - Game, data tabular, sistem nilai
 7. **Array 3D** - Konsep dan penggunaan
 
-### Fitur Materi:
-✅ **22 contoh kode lengkap** dengan penjelasan  
-✅ **2 diagram SVG** untuk visualisasi konsep  
-✅ **8 soal latihan** dari tingkat dasar hingga lanjutan  
-✅ **8 soal diskusi** untuk pemahaman konseptual  
-✅ **Narasi mengalir** dengan bahasa tingkat SMA  
-✅ **Referensi lengkap** dari buku-buku standar
-
 ## 🎯 Tujuan Pembelajaran
 
 Setelah mempelajari materi ini, mahasiswa diharapkan dapat:
@@ -65,21 +57,6 @@ https://anindito.github.io/pertemuan-10/
 4. Kerjakan soal latihan untuk praktek
 5. Diskusikan soal diskusi dengan teman
 
-## 🖼️ Tentang Diagram
-
-### array_2d_visualization.svg
-Menampilkan struktur array 2D dengan:
-- 3 baris × 4 kolom
-- Label baris dan kolom
-- Contoh notasi akses elemen
-- Visualisasi indeks
-
-### matrix_addition.svg
-Mengilustrasikan proses penjumlahan matriks:
-- Matriks A (warna biru)
-- Matriks B (warna merah muda)
-- Matriks C hasil (warna hijau)
-- Contoh perhitungan elemen
 
 ## ⌨️ Keyboard Shortcuts (Presentasi)
 
@@ -93,14 +70,6 @@ Mengilustrasikan proses penjumlahan matriks:
 | `S` | Speaker notes |
 | `B` atau `.` | Blank screen |
 
-## 🎨 Fitur Presentasi
-
-✅ **50+ slides** terstruktur dengan baik  
-✅ **Code syntax highlighting** untuk C++  
-✅ **2 diagram SVG** terintegrasi dari GitHub  
-✅ **Tabel matriks** interaktif  
-✅ **Animasi smooth** antar slide  
-✅ **Responsive design** untuk berbagai device  
 
 ## 🔗 CPMK yang Dicakup
 
