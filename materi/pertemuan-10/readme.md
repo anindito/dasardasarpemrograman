@@ -47,7 +47,7 @@ Setelah mempelajari materi ini, mahasiswa diharapkan dapat:
 
 Presentasi HTML dapat diakses di GitHub Pages:
 ```
-https://anindito.github.io/dasardasarpemrograman/materi/pertemuan-10/
+https://anindito.github.io/pertemuan-10/
 ```
 
 ## 📖 Cara Menggunakan
