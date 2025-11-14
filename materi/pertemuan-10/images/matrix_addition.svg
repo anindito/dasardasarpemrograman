@@ -1,0 +1,90 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">Penjumlahan Matriks: A + B = C</text>
+  
+  <!-- Matrix A -->
+  <text x="100" y="70" text-anchor="middle" font-size="16" font-weight="bold" fill="#2C5F7C">Matrix A</text>
+  <rect x="50" y="80" width="40" height="40" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="90" y="80" width="40" height="40" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="130" y="80" width="40" height="40" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="50" y="120" width="40" height="40" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="90" y="120" width="40" height="40" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="130" y="120" width="40" height="40" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="50" y="160" width="40" height="40" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="90" y="160" width="40" height="40" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="130" y="160" width="40" height="40" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  
+  <text x="70" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">1</text>
+  <text x="110" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">2</text>
+  <text x="150" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">3</text>
+  <text x="70" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">4</text>
+  <text x="110" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">5</text>
+  <text x="150" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">6</text>
+  <text x="70" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">7</text>
+  <text x="110" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">8</text>
+  <text x="150" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">9</text>
+  
+  <!-- Plus sign -->
+  <text x="210" y="150" text-anchor="middle" font-size="36" font-weight="bold" fill="#2C5F7C">+</text>
+  
+  <!-- Matrix B -->
+  <text x="320" y="70" text-anchor="middle" font-size="16" font-weight="bold" fill="#2C5F7C">Matrix B</text>
+  <rect x="270" y="80" width="40" height="40" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="310" y="80" width="40" height="40" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="350" y="80" width="40" height="40" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="270" y="120" width="40" height="40" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="310" y="120" width="40" height="40" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="350" y="120" width="40" height="40" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="270" y="160" width="40" height="40" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="310" y="160" width="40" height="40" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="350" y="160" width="40" height="40" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="2"/>
+  
+  <text x="290" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">9</text>
+  <text x="330" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">8</text>
+  <text x="370" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">7</text>
+  <text x="290" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">6</text>
+  <text x="330" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">5</text>
+  <text x="370" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">4</text>
+  <text x="290" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">3</text>
+  <text x="330" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">2</text>
+  <text x="370" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">1</text>
+  
+  <!-- Equal sign -->
+  <text x="430" y="150" text-anchor="middle" font-size="36" font-weight="bold" fill="#2C5F7C">=</text>
+  
+  <!-- Matrix C (Result) -->
+  <text x="540" y="70" text-anchor="middle" font-size="16" font-weight="bold" fill="#2C5F7C">Matrix C</text>
+  <rect x="490" y="80" width="40" height="40" fill="#90EE90" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="530" y="80" width="40" height="40" fill="#90EE90" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="570" y="80" width="40" height="40" fill="#90EE90" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="490" y="120" width="40" height="40" fill="#90EE90" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="530" y="120" width="40" height="40" fill="#90EE90" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="570" y="120" width="40" height="40" fill="#90EE90" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="490" y="160" width="40" height="40" fill="#90EE90" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="530" y="160" width="40" height="40" fill="#90EE90" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="570" y="160" width="40" height="40" fill="#90EE90" stroke="#2C5F7C" stroke-width="2"/>
+  
+  <text x="510" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="550" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="590" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="510" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="550" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="590" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="510" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="550" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="590" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C5F7C">10</text>
+  
+  <!-- Example calculation arrows -->
+  <text x="100" y="240" font-size="12" fill="#555">Contoh: C[0][0] = A[0][0] + B[0][0] = 1 + 9 = 10</text>
+  <text x="100" y="260" font-size="12" fill="#555">Setiap elemen C[i][j] = A[i][j] + B[i][j]</text>
+  
+  <!-- Legend -->
+  <rect x="650" y="100" width="20" height="20" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="1"/>
+  <text x="680" y="115" font-size="12" fill="#555">Matrix A</text>
+  
+  <rect x="650" y="130" width="20" height="20" fill="#FFE5E5" stroke="#2C5F7C" stroke-width="1"/>
+  <text x="680" y="145" font-size="12" fill="#555">Matrix B</text>
+  
+  <rect x="650" y="160" width="20" height="20" fill="#90EE90" stroke="#2C5F7C" stroke-width="1"/>
+  <text x="680" y="175" font-size="12" fill="#555">Matrix C (Hasil)</text>
+</svg>
