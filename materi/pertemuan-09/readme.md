@@ -24,6 +24,13 @@ Setelah mempelajari materi ini, mahasiswa diharapkan dapat:
 - Mengimplementasikan algoritma pencarian sederhana
 - Membuat aplikasi sederhana menggunakan array
 
+## 🌐 Presentasi Online
+
+Presentasi HTML dapat diakses di GitHub Pages:
+```
+https://anindito.github.io/pertemuan-09/
+```
+
 ## 📖 Cara Menggunakan
 
 ### Untuk Dosen:
