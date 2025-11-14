@@ -1,0 +1,66 @@
+<svg viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">Array Dua Dimensi (3×4)</text>
+  
+  <!-- Column labels -->
+  <text x="150" y="70" text-anchor="middle" font-size="14" fill="#555">Kolom 0</text>
+  <text x="250" y="70" text-anchor="middle" font-size="14" fill="#555">Kolom 1</text>
+  <text x="350" y="70" text-anchor="middle" font-size="14" fill="#555">Kolom 2</text>
+  <text x="450" y="70" text-anchor="middle" font-size="14" fill="#555">Kolom 3</text>
+  
+  <!-- Row 0 -->
+  <text x="50" y="125" text-anchor="middle" font-size="14" fill="#555">Baris 0</text>
+  <rect x="100" y="100" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="200" y="100" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="300" y="100" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="400" y="100" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  
+  <text x="150" y="135" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">10</text>
+  <text x="250" y="135" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">20</text>
+  <text x="350" y="135" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">30</text>
+  <text x="450" y="135" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">40</text>
+  
+  <!-- Row 1 -->
+  <text x="50" y="195" text-anchor="middle" font-size="14" fill="#555">Baris 1</text>
+  <rect x="100" y="170" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="200" y="170" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="300" y="170" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="400" y="170" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  
+  <text x="150" y="205" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">50</text>
+  <text x="250" y="205" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">60</text>
+  <text x="350" y="205" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">70</text>
+  <text x="450" y="205" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">80</text>
+  
+  <!-- Row 2 -->
+  <text x="50" y="265" text-anchor="middle" font-size="14" fill="#555">Baris 2</text>
+  <rect x="100" y="240" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="200" y="240" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="300" y="240" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  <rect x="400" y="240" width="100" height="60" fill="#E8F4F8" stroke="#2C5F7C" stroke-width="2"/>
+  
+  <text x="150" y="275" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">90</text>
+  <text x="250" y="275" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">100</text>
+  <text x="350" y="275" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">110</text>
+  <text x="450" y="275" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C5F7C">120</text>
+  
+  <!-- Example access notation -->
+  <text x="550" y="135" font-size="14" fill="#FF6B6B">matrix[0][0]</text>
+  <line x1="500" y1="130" x2="540" y2="130" stroke="#FF6B6B" stroke-width="2" marker-end="url(#arrow-red)"/>
+  
+  <text x="550" y="205" font-size="14" fill="#FF6B6B">matrix[1][2]</text>
+  <line x1="400" y1="200" x2="540" y2="200" stroke="#FF6B6B" stroke-width="2" marker-end="url(#arrow-red)"/>
+  
+  <text x="550" y="275" font-size="14" fill="#FF6B6B">matrix[2][3]</text>
+  <line x1="500" y1="270" x2="540" y2="270" stroke="#FF6B6B" stroke-width="2" marker-end="url(#arrow-red)"/>
+  
+  <!-- Legend -->
+  <text x="50" y="330" font-size="13" fill="#555">Notasi akses: matrix[baris][kolom]</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF6B6B" />
+    </marker>
+  </defs>
+</svg>
