@@ -75,25 +75,6 @@ pertemuan-11/
 └── .nojekyll                      # Config GitHub Pages
 ```
 
-## ✨ Fitur Materi
-
-### 📖 Bahan Ajar
-✅ **30+ contoh kode lengkap** dengan penjelasan detail  
-✅ **2 diagram SVG** untuk visualisasi konsep  
-✅ **8 soal latihan** bertingkat (dasar, menengah, lanjutan)  
-✅ **8 soal diskusi** untuk pemahaman konseptual  
-✅ **Narasi mengalir** dengan bahasa tingkat SMA  
-✅ **Best practices** dan pedoman keamanan  
-✅ **Referensi lengkap** dari buku-buku standar
-
-### 🎨 Presentasi HTML
-✅ **50+ slides** interaktif dengan Reveal.js  
-✅ **Syntax highlighting** untuk kode C++  
-✅ **Progressive reveals** untuk penjelasan bertahap  
-✅ **Code line highlighting** untuk fokus pada bagian penting  
-✅ **Embedded SVG diagrams** untuk visualisasi  
-✅ **Responsive design** untuk berbagai ukuran layar
-
 ## 🎯 Tujuan Pembelajaran
 
 Setelah mempelajari materi ini, mahasiswa diharapkan dapat:
