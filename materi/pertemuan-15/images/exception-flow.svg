@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .try-block { fill: #c8e6c9; stroke: #388e3c; stroke-width: 2; }
+      .catch-block { fill: #ffcdd2; stroke: #d32f2f; stroke-width: 2; }
+      .throw-box { fill: #fff9c4; stroke: #f57c00; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+      .title { font-size: 16px; font-weight: bold; }
+      .code { font-family: 'Courier New', monospace; font-size: 12px; }
+      .arrow { stroke: #333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .exception-arrow { stroke: #d32f2f; stroke-width: 3; fill: none; marker-end: url(#exception-arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+    <marker id="exception-arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#d32f2f" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="text title">Alur Exception Handling dengan Try-Catch</text>
+  
+  <!-- Try block -->
+  <rect x="50" y="60" width="250" height="200" class="try-block" rx="8"/>
+  <text x="175" y="85" class="text title" style="fill: #2e7d32;">TRY BLOCK</text>
+  
+  <!-- Code in try -->
+  <text x="60" y="115" class="code" text-anchor="start">try {</text>
+  <text x="80" y="135" class="code" text-anchor="start">int a = 10;</text>
+  <text x="80" y="155" class="code" text-anchor="start">int b = 0;</text>
+  
+  <!-- Throw point -->
+  <rect x="70" y="170" width="210" height="40" class="throw-box" rx="5"/>
+  <text x="80" y="185" class="code" text-anchor="start" style="font-weight: bold;">if (b == 0)</text>
+  <text x="90" y="202" class="code" text-anchor="start" style="font-weight: bold;">throw "Div by zero!";</text>
+  
+  <text x="80" y="230" class="code" text-anchor="start">int c = a / b;</text>
+  <text x="80" y="245" class="code" text-anchor="start">// Tidak dieksekusi!</text>
+  <text x="60" y="255" class="code" text-anchor="start">}</text>
+  
+  <!-- Normal flow arrow -->
+  <path d="M 175 260 L 175 300" class="arrow"/>
+  <text x="150" y="285" class="text" style="font-size: 12px; fill: #388e3c;">Normal flow</text>
+  <text x="150" y="300" class="text" style="font-size: 11px; fill: #388e3c;">(tidak ada error)</text>
+  
+  <!-- Exception thrown arrow -->
+  <path d="M 280 190 L 480 190" class="exception-arrow" stroke-dasharray="5,5"/>
+  <text x="380" y="180" class="text" style="fill: #d32f2f; font-weight: bold;">⚠️ Exception!</text>
+  
+  <!-- Catch block -->
+  <rect x="500" y="60" width="250" height="200" class="catch-block" rx="8"/>
+  <text x="625" y="85" class="text title" style="fill: #c62828;">CATCH BLOCK</text>
+  
+  <!-- Code in catch -->
+  <text x="510" y="115" class="code" text-anchor="start">catch (const char* e) {</text>
+  <text x="530" y="135" class="code" text-anchor="start">cout &lt;&lt; "Error: "</text>
+  <text x="550" y="155" class="code" text-anchor="start">&lt;&lt; e;</text>
+  <text x="530" y="175" class="code" text-anchor="start">// Handle error</text>
+  <text x="530" y="195" class="code" text-anchor="start">// Program tetap</text>
+  <text x="530" y="215" class="code" text-anchor="start">// berjalan!</text>
+  <text x="510" y="235" class="code" text-anchor="start">}</text>
+  
+  <!-- Catch arrow -->
+  <path d="M 625 260 L 625 300" class="arrow"/>
+  <text x="670" y="285" class="text" style="font-size: 12px; fill: #d32f2f;">After catch</text>
+  
+  <!-- After try-catch -->
+  <rect x="200" y="310" width="400" height="60" class="box" rx="5"/>
+  <text x="400" y="335" class="text title">Kode Setelah Try-Catch</text>
+  <text x="400" y="355" class="text">Program tetap berjalan normal</text>
+  
+  <!-- Flow comparison -->
+  <g id="comparison">
+    <rect x="50" y="400" width="700" height="130" fill="#f5f5f5" stroke="#666" stroke-width="1" rx="5"/>
+    <text x="400" y="425" class="text title">Perbandingan dengan/tanpa Exception Handling</text>
+    
+    <!-- Without exception handling -->
+    <rect x="70" y="440" width="300" height="70" fill="#ffebee" stroke="#c62828" stroke-width="1" rx="3"/>
+    <text x="220" y="460" class="text" style="font-weight: bold; fill: #c62828;">❌ Tanpa Exception Handling</text>
+    <text x="220" y="480" class="text" style="font-size: 12px;">• Program CRASH</text>
+    <text x="220" y="497" class="text" style="font-size: 12px;">• Error message tidak jelas</text>
+    
+    <!-- With exception handling -->
+    <rect x="430" y="440" width="300" height="70" fill="#e8f5e9" stroke="#388e3c" stroke-width="1" rx="3"/>
+    <text x="580" y="460" class="text" style="font-weight: bold; fill: #388e3c;">✅ Dengan Exception Handling</text>
+    <text x="580" y="480" class="text" style="font-size: 12px;">• Program tetap berjalan (graceful)</text>
+    <text x="580" y="497" class="text" style="font-size: 12px;">• Error message informatif</text>
+  </g>
+</svg>
