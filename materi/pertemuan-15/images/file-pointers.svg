@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .file { fill: #fff; stroke: #333; stroke-width: 2; }
+      .byte { fill: #e3f2fd; stroke: #1976d2; stroke-width: 1; }
+      .pointer { fill: #ff5722; }
+      .text { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+      .title { font-size: 16px; font-weight: bold; }
+      .code { font-family: 'Courier New', monospace; font-size: 12px; }
+      .label { font-size: 11px; fill: #666; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="30" class="text title">File Position Pointers: seekg() dan tellg()</text>
+  
+  <!-- File representation -->
+  <text x="450" y="70" class="text" style="font-weight: bold;">Representasi File dalam Memori:</text>
+  
+  <!-- File bytes -->
+  <g id="file-bytes">
+    <rect x="50" y="90" width="800" height="50" class="file" rx="5"/>
+    
+    <!-- Individual bytes -->
+    <rect x="60" y="100" width="30" height="30" class="byte"/>
+    <text x="75" y="120" class="code">H</text>
+    
+    <rect x="95" y="100" width="30" height="30" class="byte"/>
+    <text x="110" y="120" class="code">e</text>
+    
+    <rect x="130" y="100" width="30" height="30" class="byte"/>
+    <text x="145" y="120" class="code">l</text>
+    
+    <rect x="165" y="100" width="30" height="30" class="byte"/>
+    <text x="180" y="120" class="code">l</text>
+    
+    <rect x="200" y="100" width="30" height="30" class="byte"/>
+    <text x="215" y="120" class="code">o</text>
+    
+    <rect x="235" y="100" width="30" height="30" class="byte"/>
+    <text x="250" y="120" class="code"> </text>
+    
+    <rect x="270" y="100" width="30" height="30" class="byte"/>
+    <text x="285" y="120" class="code">W</text>
+    
+    <rect x="305" y="100" width="30" height="30" class="byte"/>
+    <text x="320" y="120" class="code">o</text>
+    
+    <rect x="340" y="100" width="30" height="30" class="byte"/>
+    <text x="355" y="120" class="code">r</text>
+    
+    <rect x="375" y="100" width="30" height="30" class="byte"/>
+    <text x="390" y="120" class="code">l</text>
+    
+    <rect x="410" y="100" width="30" height="30" class="byte"/>
+    <text x="425" y="120" class="code">d</text>
+    
+    <rect x="445" y="100" width="30" height="30" class="byte"/>
+    <text x="460" y="120" class="code">!</text>
+    
+    <!-- More bytes indicator -->
+    <text x="510" y="120" class="text">...</text>
+  </g>
+  
+  <!-- Position indicators -->
+  <text x="75" y="155" class="label">0</text>
+  <text x="110" y="155" class="label">1</text>
+  <text x="145" y="155" class="label">2</text>
+  <text x="180" y="155" class="label">3</text>
+  <text x="215" y="155" class="label">4</text>
+  <text x="250" y="155" class="label">5</text>
+  <text x="285" y="155" class="label">6</text>
+  <text x="320" y="155" class="label">7</text>
+  <text x="355" y="155" class="label">8</text>
+  <text x="390" y="155" class="label">9</text>
+  <text x="425" y="155" class="label">10</text>
+  <text x="460" y="155" class="label">11</text>
+  
+  <!-- Direction labels -->
+  <g id="directions">
+    <text x="60" y="190" class="text" style="fill: #1976d2; font-weight: bold;">← ios::beg</text>
+    <text x="250" y="190" class="text" style="fill: #f57c00; font-weight: bold;">ios::cur</text>
+    <text x="800" y="190" class="text" style="fill: #d32f2f; font-weight: bold; text-anchor: end;">ios::end →</text>
+  </g>
+  
+  <!-- Example 1: seekg from beginning -->
+  <g id="example1">
+    <text x="50" y="240" class="text title" text-anchor="start">Contoh 1: seekg(5, ios::beg)</text>
+    <rect x="50" y="250" width="380" height="80" fill="#f5f5f5" stroke="#1976d2" stroke-width="2" rx="5"/>
+    
+    <!-- Code -->
+    <text x="60" y="275" class="code" text-anchor="start">ifstream file("data.txt");</text>
+    <text x="60" y="295" class="code" text-anchor="start">file.seekg(5, ios::beg);</text>
+    <text x="60" y="315" class="code" text-anchor="start">// Pointer pindah ke posisi 5</text>
+    
+    <!-- Visual pointer -->
+    <polygon points="245,100 255,100 250,90" class="pointer"/>
+    <line x1="250" y1="90" x2="250" y2="250" stroke="#ff5722" stroke-width="2" stroke-dasharray="5,5"/>
+    <circle cx="250" cy="90" r="5" class="pointer"/>
+  </g>
+  
+  <!-- Example 2: seekg from current -->
+  <g id="example2">
+    <text x="470" y="240" class="text title" text-anchor="start">Contoh 2: seekg(3, ios::cur)</text>
+    <rect x="470" y="250" width="380" height="80" fill="#f5f5f5" stroke="#f57c00" stroke-width="2" rx="5"/>
+    
+    <!-- Code -->
+    <text x="480" y="275" class="code" text-anchor="start">// Posisi saat ini: 5</text>
+    <text x="480" y="295" class="code" text-anchor="start">file.seekg(3, ios::cur);</text>
+    <text x="480" y="315" class="code" text-anchor="start">// Pointer pindah ke 5+3 = 8</text>
+    
+    <!-- Visual pointer -->
+    <polygon points="350,100 360,100 355,90" class="pointer" fill="#f57c00"/>
+    <line x1="355" y1="90" x2="355" y2="250" stroke="#f57c00" stroke-width="2" stroke-dasharray="5,5"/>
+    <circle cx="355" cy="90" r="5" fill="#f57c00"/>
+  </g>
+  
+  <!-- Example 3: seekg from end -->
+  <g id="example3">
+    <text x="50" y="370" class="text title" text-anchor="start">Contoh 3: seekg(-3, ios::end)</text>
+    <rect x="50" y="380" width="380" height="100" fill="#f5f5f5" stroke="#d32f2f" stroke-width="2" rx="5"/>
+    
+    <!-- Code -->
+    <text x="60" y="405" class="code" text-anchor="start">file.seekg(-3, ios::end);</text>
+    <text x="60" y="425" class="code" text-anchor="start">// Pointer 3 byte dari akhir</text>
+    <text x="60" y="445" class="code" text-anchor="start">// Berguna untuk membaca</text>
+    <text x="60" y="465" class="code" text-anchor="start">// data di akhir file</text>
+  </g>
+  
+  <!-- Example 4: tellg -->
+  <g id="example4">
+    <text x="470" y="370" class="text title" text-anchor="start">Contoh 4: tellg() - Cek Posisi</text>
+    <rect x="470" y="380" width="380" height="100" fill="#f5f5f5" stroke="#388e3c" stroke-width="2" rx="5"/>
+    
+    <!-- Code -->
+    <text x="480" y="405" class="code" text-anchor="start">streampos pos = file.tellg();</text>
+    <text x="480" y="425" class="code" text-anchor="start">cout &lt;&lt; "Posisi: " &lt;&lt; pos;</text>
+    <text x="480" y="445" class="code" text-anchor="start">// Output: Posisi: 8</text>
+    <text x="480" y="465" class="code" text-anchor="start">// (setelah seekg dari contoh 2)</text>
+  </g>
+  
+  <!-- Usage note -->
+  <rect x="50" y="510" width="800" height="70" fill="#fff9c4" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="450" y="535" class="text title">📝 Catatan Penting</text>
+  <text x="450" y="555" class="text">• seekg() untuk INPUT stream (reading) | seekp() untuk OUTPUT stream (writing)</text>
+  <text x="450" y="572" class="text">• tellg() untuk posisi INPUT | tellp() untuk posisi OUTPUT</text>
+</svg>
