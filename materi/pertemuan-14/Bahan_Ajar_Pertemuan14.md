@@ -28,62 +28,7 @@ OOP memiliki beberapa keunggulan dibandingkan pemrograman prosedural. Pertama, k
 
 Kembali ke contoh program mahasiswa, dengan OOP kita dapat membuat sebuah class `Mahasiswa` yang memiliki semua atribut (nama, NIM, jurusan, IPK) dan method (tampilkan, hitungPredikat, dll) dalam satu tempat. Jika kita ingin menambahkan atribut baru, kita cukup mengubah class `Mahasiswa` tanpa harus mengubah kode di tempat lain.
 
-<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Prosedural Programming -->
-  <rect x="50" y="50" width="300" height="300" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
-  <text x="200" y="75" text-anchor="middle" font-size="16" font-weight="bold" fill="#1976d2">Pemrograman Prosedural</text>
-  
-  <!-- Data -->
-  <rect x="70" y="100" width="260" height="80" fill="#fff" stroke="#666" stroke-width="1"/>
-  <text x="200" y="125" text-anchor="middle" font-size="14" font-weight="bold">Data</text>
-  <text x="200" y="145" text-anchor="middle" font-size="12">nama[]</text>
-  <text x="200" y="160" text-anchor="middle" font-size="12">nim[]</text>
-  <text x="200" y="175" text-anchor="middle" font-size="12">ipk[]</text>
-  
-  <!-- Functions -->
-  <rect x="70" y="200" width="260" height="130" fill="#fff" stroke="#666" stroke-width="1"/>
-  <text x="200" y="225" text-anchor="middle" font-size="14" font-weight="bold">Functions</text>
-  <text x="200" y="245" text-anchor="middle" font-size="12">tambahMahasiswa()</text>
-  <text x="200" y="260" text-anchor="middle" font-size="12">hapusMahasiswa()</text>
-  <text x="200" y="275" text-anchor="middle" font-size="12">tampilkanMahasiswa()</text>
-  <text x="200" y="290" text-anchor="middle" font-size="12">hitungRataIPK()</text>
-  <text x="200" y="305" text-anchor="middle" font-size="12">cariMahasiswa()</text>
-  
-  <!-- Arrow -->
-  <path d="M 200 180 L 200 200" stroke="#999" stroke-width="2" marker-end="url(#arrowgray)" stroke-dasharray="5,5"/>
-  
-  <!-- OOP -->
-  <rect x="450" y="50" width="300" height="300" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
-  <text x="600" y="75" text-anchor="middle" font-size="16" font-weight="bold" fill="#7b1fa2">Pemrograman Berorientasi Objek</text>
-  
-  <!-- Class Mahasiswa -->
-  <rect x="470" y="100" width="260" height="230" fill="#fff" stroke="#666" stroke-width="2"/>
-  <text x="600" y="125" text-anchor="middle" font-size="14" font-weight="bold">Class Mahasiswa</text>
-  <line x1="470" y1="135" x2="730" y2="135" stroke="#666" stroke-width="1"/>
-  
-  <!-- Attributes -->
-  <text x="480" y="155" font-size="13" font-weight="bold">Attributes:</text>
-  <text x="490" y="175" font-size="12">- nama</text>
-  <text x="490" y="190" font-size="12">- nim</text>
-  <text x="490" y="205" font-size="12">- jurusan</text>
-  <text x="490" y="220" font-size="12">- ipk</text>
-  
-  <line x1="470" y1="235" x2="730" y2="235" stroke="#666" stroke-width="1"/>
-  
-  <!-- Methods -->
-  <text x="480" y="255" font-size="13" font-weight="bold">Methods:</text>
-  <text x="490" y="275" font-size="12">+ tampilkan()</text>
-  <text x="490" y="290" font-size="12">+ hitungPredikat()</text>
-  <text x="490" y="305" font-size="12">+ updateIPK()</text>
-  <text x="490" y="320" font-size="12">+ getNama()</text>
-  
-  <!-- Arrow marker -->
-  <defs>
-    <marker id="arrowgray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#999"/>
-    </marker>
-  </defs>
-</svg>
+![Gambar 14.1: Perbandingan antara paradigma pemrograman prosedural dan berorientasi objek](images/prosedural-vs-oop.svg)
 
 *Gambar 14.1: Perbandingan antara paradigma pemrograman prosedural dan berorientasi objek*
 
@@ -225,59 +170,7 @@ int main() {
 
 Pada contoh di atas, kita membuat dua object `mhs1` dan `mhs2` dari class `Mahasiswa`. Setiap object memiliki set atribut yang independen. Kita mengatur data untuk setiap object menggunakan method `setData()`, kemudian menampilkan data dan menghitung predikat untuk masing-masing mahasiswa. Perhatikan bahwa meskipun `mhs1` dan `mhs2` dibuat dari class yang sama, mereka adalah entitas yang terpisah dengan data yang berbeda.
 
-<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
-  <!-- Class (Blueprint) -->
-  <rect x="50" y="50" width="250" height="200" fill="#e1f5fe" stroke="#0277bd" stroke-width="3"/>
-  <text x="175" y="80" text-anchor="middle" font-size="18" font-weight="bold" fill="#0277bd">Class Mahasiswa</text>
-  <text x="175" y="100" text-anchor="middle" font-size="14" fill="#666">(Blueprint)</text>
-  <line x1="50" y1="110" x2="300" y2="110" stroke="#0277bd" stroke-width="2"/>
-  
-  <text x="65" y="135" font-size="13" font-weight="bold">Attributes:</text>
-  <text x="75" y="155" font-size="12">- nama</text>
-  <text x="75" y="170" font-size="12">- nim</text>
-  <text x="75" y="185" font-size="12">- jurusan</text>
-  <text x="75" y="200" font-size="12">- ipk</text>
-  
-  <text x="65" y="225" font-size="13" font-weight="bold">Methods:</text>
-  <text x="75" y="240" font-size="12">+ setData()</text>
-  
-  <!-- Arrow -->
-  <path d="M 175 250 L 175 280" stroke="#666" stroke-width="2" marker-end="url(#arrow1)"/>
-  <text x="190" y="270" font-size="13" fill="#666">creates</text>
-  
-  <!-- Object 1 -->
-  <rect x="50" y="300" width="250" height="180" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
-  <text x="175" y="330" text-anchor="middle" font-size="16" font-weight="bold" fill="#e65100">Object: mhs1</text>
-  <line x1="50" y1="340" x2="300" y2="340" stroke="#e65100" stroke-width="2"/>
-  
-  <text x="65" y="365" font-size="12" font-weight="bold">Data:</text>
-  <text x="75" y="385" font-size="12">nama = "Budi Santoso"</text>
-  <text x="75" y="400" font-size="12">nim = "2101001"</text>
-  <text x="75" y="415" font-size="12">jurusan = "Informatika"</text>
-  <text x="75" y="430" font-size="12">ipk = 3.75</text>
-  <text x="75" y="455" font-size="12" font-style="italic">Predikat: Cum Laude</text>
-  
-  <!-- Object 2 -->
-  <rect x="350" y="300" width="250" height="180" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
-  <text x="475" y="330" text-anchor="middle" font-size="16" font-weight="bold" fill="#2e7d32">Object: mhs2</text>
-  <line x1="350" y1="340" x2="600" y2="340" stroke="#2e7d32" stroke-width="2"/>
-  
-  <text x="365" y="365" font-size="12" font-weight="bold">Data:</text>
-  <text x="375" y="385" font-size="12">nama = "Ani Lestari"</text>
-  <text x="375" y="400" font-size="12">nim = "2101002"</text>
-  <text x="375" y="415" font-size="12">jurusan = "Sistem Informasi"</text>
-  <text x="375" y="430" font-size="12">ipk = 3.25</text>
-  <text x="375" y="455" font-size="12" font-style="italic">Predikat: Sangat Memuaskan</text>
-  
-  <!-- Arrow from class to object 2 -->
-  <path d="M 300 150 L 320 150 L 320 350 L 350 350" stroke="#666" stroke-width="2" marker-end="url(#arrow1)" stroke-dasharray="5,5"/>
-  
-  <defs>
-    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
-    </marker>
-  </defs>
-</svg>
+![Gambar 14.2: Hubungan antara class sebagai blueprint dan object sebagai instance](images/class-object.svg)
 
 *Gambar 14.2: Hubungan antara class sebagai blueprint dan object sebagai instance*
 
@@ -541,55 +434,7 @@ int main() {
 
 *Kode 14.9: Penggunaan getter dan setter methods*
 
-<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
-  <!-- Main box -->
-  <rect x="200" y="50" width="400" height="350" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
-  
-  <!-- Title -->
-  <text x="400" y="80" text-anchor="middle" font-size="18" font-weight="bold">Class Mahasiswa</text>
-  <line x1="200" y1="90" x2="600" y2="90" stroke="#333" stroke-width="2"/>
-  
-  <!-- Private section -->
-  <rect x="220" y="110" width="360" height="140" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
-  <text x="230" y="135" font-size="14" font-weight="bold" fill="#c62828">Private (Hidden)</text>
-  <line x1="220" y1="145" x2="580" y2="145" stroke="#c62828" stroke-width="1"/>
-  
-  <text x="240" y="170" font-size="12">- string nama</text>
-  <text x="240" y="190" font-size="12">- string nim</text>
-  <text x="240" y="210" font-size="12">- string jurusan</text>
-  <text x="240" y="230" font-size="12">- float ipk</text>
-  
-  <!-- Public section -->
-  <rect x="220" y="270" width="360" height="110" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
-  <text x="230" y="295" font-size="14" font-weight="bold" fill="#2e7d32">Public (Interface)</text>
-  <line x1="220" y1="305" x2="580" y2="305" stroke="#2e7d32" stroke-width="1"/>
-  
-  <text x="240" y="325" font-size="12">+ getNama(), setNama()</text>
-  <text x="240" y="345" font-size="12">+ getNim(), setNim()</text>
-  <text x="240" y="365" font-size="12">+ getIPK(), setIPK()</text>
-  
-  <!-- User/Client -->
-  <ellipse cx="100" cy="225" rx="60" ry="40" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
-  <text x="100" y="220" text-anchor="middle" font-size="13" font-weight="bold">User</text>
-  <text x="100" y="235" text-anchor="middle" font-size="11">Code</text>
-  
-  <!-- Arrows -->
-  <path d="M 160 225 L 220 315" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowgreen)"/>
-  <text x="180" y="280" font-size="11" fill="#2e7d32">Access via</text>
-  <text x="180" y="293" font-size="11" fill="#2e7d32">public methods</text>
-  
-  <path d="M 160 200 L 220 180" stroke="#c62828" stroke-width="2" stroke-dasharray="5,5"/>
-  <line x1="210" y1="175" x2="230" y2="185" stroke="#c62828" stroke-width="2"/>
-  <line x1="210" y1="185" x2="230" y2="175" stroke="#c62828" stroke-width="2"/>
-  <text x="165" y="175" font-size="11" fill="#c62828">No direct</text>
-  <text x="165" y="188" font-size="11" fill="#c62828">access!</text>
-  
-  <defs>
-    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#2e7d32"/>
-    </marker>
-  </defs>
-</svg>
+![Gambar 14.3: Konsep enkapsulasi dengan data hiding dan interface public](images/enkapsulasi.svg)
 
 *Gambar 14.3: Konsep enkapsulasi dengan data hiding dan interface public*
 
@@ -770,57 +615,7 @@ int main() {
 
 *Kode 14.12: Urutan pemanggilan constructor dan destructor dalam inheritance*
 
-<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
-  <!-- Person (Base class) -->
-  <rect x="300" y="50" width="200" height="100" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
-  <text x="400" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#1976d2">Person</text>
-  <line x1="300" y1="90" x2="500" y2="90" stroke="#1976d2" stroke-width="1"/>
-  <text x="310" y="110" font-size="12">- nama: string</text>
-  <text x="310" y="130" font-size="12">- umur: int</text>
-  
-  <!-- Mahasiswa (Derived class) -->
-  <rect x="300" y="200" width="200" height="120" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
-  <text x="400" y="230" text-anchor="middle" font-size="16" font-weight="bold" fill="#e65100">Mahasiswa</text>
-  <line x1="300" y1="240" x2="500" y2="240" stroke="#e65100" stroke-width="1"/>
-  <text x="310" y="260" font-size="12">- nim: string</text>
-  <text x="310" y="280" font-size="12">- jurusan: string</text>
-  <text x="310" y="300" font-size="12">+ hitungPredikat()</text>
-  
-  <!-- Inheritance arrow -->
-  <path d="M 400 150 L 400 200" stroke="#333" stroke-width="2" fill="none"/>
-  <path d="M 385 190 L 400 200 L 415 190" fill="#333"/>
-  
-  <!-- Labels -->
-  <text x="425" y="180" font-size="12" fill="#333">inherits from</text>
-  
-  <!-- Mahasiswa instances -->
-  <rect x="50" y="370" width="180" height="100" fill="#f1f8e9" stroke="#558b2f" stroke-width="2"/>
-  <text x="140" y="395" text-anchor="middle" font-size="13" font-weight="bold">mhs1: Mahasiswa</text>
-  <text x="60" y="415" font-size="11">nama = "Budi"</text>
-  <text x="60" y="430" font-size="11">umur = 20</text>
-  <text x="60" y="445" font-size="11">nim = "2101001"</text>
-  <text x="60" y="460" font-size="11">jurusan = "Informatika"</text>
-  
-  <rect x="310" y="370" width="180" height="100" fill="#f1f8e9" stroke="#558b2f" stroke-width="2"/>
-  <text x="400" y="395" text-anchor="middle" font-size="13" font-weight="bold">mhs2: Mahasiswa</text>
-  <text x="320" y="415" font-size="11">nama = "Ani"</text>
-  <text x="320" y="430" font-size="11">umur = 19</text>
-  <text x="320" y="445" font-size="11">nim = "2101002"</text>
-  <text x="320" y="460" font-size="11">jurusan = "SI"</text>
-  
-  <!-- Instance arrows -->
-  <path d="M 140 320 L 140 370" stroke="#558b2f" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowinst)"/>
-  <path d="M 400 320 L 400 370" stroke="#558b2f" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowinst)"/>
-  
-  <text x="150" y="350" font-size="11" fill="#558b2f">instance of</text>
-  <text x="410" y="350" font-size="11" fill="#558b2f">instance of</text>
-  
-  <defs>
-    <marker id="arrowinst" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L8,3 z" fill="#558b2f"/>
-    </marker>
-  </defs>
-</svg>
+![Gambar 14.4: Hierarki inheritance dengan base class Person dan derived class Mahasiswa](images/inheritance.svg)
 
 *Gambar 14.4: Hierarki inheritance dengan base class Person dan derived class Mahasiswa*
 
@@ -1028,88 +823,7 @@ int main() {
 
 Pada contoh di atas, kita memiliki array of pointers ke base class `BangunDatar`, tetapi setiap pointer sebenarnya menunjuk ke object dari derived class yang berbeda. Ketika kita memanggil `tampilkanInfo()` atau `hitungLuas()` melalui pointer base class, method yang dipanggil adalah method dari derived class yang sebenarnya (runtime polymorphism). Ini sangat powerful karena memungkinkan kita menulis kode yang generic namun dapat bekerja dengan berbagai tipe objek.
 
-<svg viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg">
-  <!-- Title -->
-  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold">Runtime Polymorphism dengan Virtual Functions</text>
-  
-  <!-- Base class -->
-  <rect x="300" y="60" width="200" height="120" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
-  <text x="400" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#1976d2">BangunDatar</text>
-  <line x1="300" y1="100" x2="500" y2="100" stroke="#1976d2" stroke-width="1"/>
-  <text x="310" y="120" font-size="12">+ virtual tampilkanInfo()</text>
-  <text x="310" y="140" font-size="12">+ virtual hitungLuas()</text>
-  <text x="310" y="160" font-size="12">+ virtual ~BangunDatar()</text>
-  
-  <!-- Derived classes -->
-  <rect x="100" y="240" width="180" height="100" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
-  <text x="190" y="270" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">Persegi</text>
-  <line x1="100" y1="280" x2="280" y2="280" stroke="#e65100" stroke-width="1"/>
-  <text x="110" y="300" font-size="11">- sisi: double</text>
-  <text x="110" y="318" font-size="11">+ hitungLuas() override</text>
-  
-  <rect x="320" y="240" width="180" height="100" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
-  <text x="410" y="270" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">Lingkaran</text>
-  <line x1="320" y1="280" x2="500" y2="280" stroke="#e65100" stroke-width="1"/>
-  <text x="330" y="300" font-size="11">- jariJari: double</text>
-  <text x="330" y="318" font-size="11">+ hitungLuas() override</text>
-  
-  <rect x="540" y="240" width="180" height="100" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
-  <text x="630" y="270" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">Segitiga</text>
-  <line x1="540" y1="280" x2="720" y2="280" stroke="#e65100" stroke-width="1"/>
-  <text x="550" y="300" font-size="11">- alas, tinggi: double</text>
-  <text x="550" y="318" font-size="11">+ hitungLuas() override</text>
-  
-  <!-- Inheritance arrows -->
-  <path d="M 190 180 L 190 240" stroke="#333" stroke-width="2"/>
-  <path d="M 175 230 L 190 240 L 205 230" fill="#333"/>
-  
-  <path d="M 400 180 L 410 240" stroke="#333" stroke-width="2"/>
-  <path d="M 395 230 L 410 240 L 418 227" fill="#333"/>
-  
-  <path d="M 500 180 L 630 240" stroke="#333" stroke-width="2"/>
-  <path d="M 618 232 L 630 240 L 625 225" fill="#333"/>
-  
-  <!-- Pointer -->
-  <rect x="50" y="390" width="250" height="50" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
-  <text x="175" y="420" text-anchor="middle" font-size="13" font-weight="bold">BangunDatar* bentuk[3]</text>
-  
-  <!-- Objects -->
-  <rect x="350" y="390" width="120" height="130" fill="#fff" stroke="#666" stroke-width="1.5" rx="3"/>
-  <text x="410" y="410" text-anchor="middle" font-size="12" font-weight="bold">bentuk[0]</text>
-  <text x="360" y="435" font-size="11">BangunDatar</text>
-  <text x="360" y="453" font-size="10">object</text>
-  <line x1="350" y1="460" x2="470" y2="460" stroke="#666" stroke-width="1"/>
-  <text x="360" y="478" font-size="10">hitungLuas():</text>
-  <text x="360" y="493" font-size="10">return 0.0</text>
-  
-  <rect x="490" y="390" width="120" height="130" fill="#fff" stroke="#666" stroke-width="1.5" rx="3"/>
-  <text x="550" y="410" text-anchor="middle" font-size="12" font-weight="bold">bentuk[1]</text>
-  <text x="500" y="435" font-size="11">Persegi</text>
-  <text x="500" y="453" font-size="10">sisi = 5.0</text>
-  <line x1="490" y1="460" x2="610" y2="460" stroke="#666" stroke-width="1"/>
-  <text x="500" y="478" font-size="10">hitungLuas():</text>
-  <text x="500" y="493" font-size="10">return 25.0</text>
-  
-  <rect x="630" y="390" width="120" height="130" fill="#fff" stroke="#666" stroke-width="1.5" rx="3"/>
-  <text x="690" y="410" text-anchor="middle" font-size="12" font-weight="bold">bentuk[2]</text>
-  <text x="640" y="435" font-size="11">Lingkaran</text>
-  <text x="640" y="453" font-size="10">r = 7.0</text>
-  <line x1="630" y1="460" x2="750" y2="460" stroke="#666" stroke-width="1"/>
-  <text x="640" y="478" font-size="10">hitungLuas():</text>
-  <text x="640" y="493" font-size="10">return 153.94</text>
-  
-  <!-- Arrows from pointer to objects -->
-  <path d="M 300 415 L 350 455" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowpoly)"/>
-  <path d="M 175 440 L 290 455" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowpoly)" stroke-dasharray="5,5"/>
-  <path d="M 175 440 L 485 455" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowpoly)" stroke-dasharray="5,5"/>
-  <path d="M 175 440 L 625 455" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowpoly)" stroke-dasharray="5,5"/>
-  
-  <defs>
-    <marker id="arrowpoly" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#2e7d32"/>
-    </marker>
-  </defs>
-</svg>
+![Gambar 14.5: Runtime polymorphism - pointer base class menunjuk ke berbagai derived class objects](images/polymorphism.svg)
 
 *Gambar 14.5: Runtime polymorphism - pointer base class menunjuk ke berbagai derived class objects*
 
