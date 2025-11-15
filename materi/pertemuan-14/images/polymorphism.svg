@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold">Runtime Polymorphism dengan Virtual Functions</text>
+  
+  <!-- Base class -->
+  <rect x="300" y="60" width="200" height="120" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#1976d2">BangunDatar</text>
+  <line x1="300" y1="100" x2="500" y2="100" stroke="#1976d2" stroke-width="1"/>
+  <text x="310" y="120" font-size="12">+ virtual tampilkanInfo()</text>
+  <text x="310" y="140" font-size="12">+ virtual hitungLuas()</text>
+  <text x="310" y="160" font-size="12">+ virtual ~BangunDatar()</text>
+  
+  <!-- Derived classes -->
+  <rect x="100" y="240" width="180" height="100" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="190" y="270" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">Persegi</text>
+  <line x1="100" y1="280" x2="280" y2="280" stroke="#e65100" stroke-width="1"/>
+  <text x="110" y="300" font-size="11">- sisi: double</text>
+  <text x="110" y="318" font-size="11">+ hitungLuas() override</text>
+  
+  <rect x="320" y="240" width="180" height="100" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="410" y="270" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">Lingkaran</text>
+  <line x1="320" y1="280" x2="500" y2="280" stroke="#e65100" stroke-width="1"/>
+  <text x="330" y="300" font-size="11">- jariJari: double</text>
+  <text x="330" y="318" font-size="11">+ hitungLuas() override</text>
+  
+  <rect x="540" y="240" width="180" height="100" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="630" y="270" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">Segitiga</text>
+  <line x1="540" y1="280" x2="720" y2="280" stroke="#e65100" stroke-width="1"/>
+  <text x="550" y="300" font-size="11">- alas, tinggi: double</text>
+  <text x="550" y="318" font-size="11">+ hitungLuas() override</text>
+  
+  <!-- Inheritance arrows -->
+  <path d="M 190 180 L 190 240" stroke="#333" stroke-width="2"/>
+  <path d="M 175 230 L 190 240 L 205 230" fill="#333"/>
+  
+  <path d="M 400 180 L 410 240" stroke="#333" stroke-width="2"/>
+  <path d="M 395 230 L 410 240 L 418 227" fill="#333"/>
+  
+  <path d="M 500 180 L 630 240" stroke="#333" stroke-width="2"/>
+  <path d="M 618 232 L 630 240 L 625 225" fill="#333"/>
+  
+  <!-- Pointer -->
+  <rect x="50" y="390" width="250" height="50" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+  <text x="175" y="420" text-anchor="middle" font-size="13" font-weight="bold">BangunDatar* bentuk[3]</text>
+  
+  <!-- Objects -->
+  <rect x="350" y="390" width="120" height="130" fill="#fff" stroke="#666" stroke-width="1.5" rx="3"/>
+  <text x="410" y="410" text-anchor="middle" font-size="12" font-weight="bold">bentuk[0]</text>
+  <text x="360" y="435" font-size="11">BangunDatar</text>
+  <text x="360" y="453" font-size="10">object</text>
+  <line x1="350" y1="460" x2="470" y2="460" stroke="#666" stroke-width="1"/>
+  <text x="360" y="478" font-size="10">hitungLuas():</text>
+  <text x="360" y="493" font-size="10">return 0.0</text>
+  
+  <rect x="490" y="390" width="120" height="130" fill="#fff" stroke="#666" stroke-width="1.5" rx="3"/>
+  <text x="550" y="410" text-anchor="middle" font-size="12" font-weight="bold">bentuk[1]</text>
+  <text x="500" y="435" font-size="11">Persegi</text>
+  <text x="500" y="453" font-size="10">sisi = 5.0</text>
+  <line x1="490" y1="460" x2="610" y2="460" stroke="#666" stroke-width="1"/>
+  <text x="500" y="478" font-size="10">hitungLuas():</text>
+  <text x="500" y="493" font-size="10">return 25.0</text>
+  
+  <rect x="630" y="390" width="120" height="130" fill="#fff" stroke="#666" stroke-width="1.5" rx="3"/>
+  <text x="690" y="410" text-anchor="middle" font-size="12" font-weight="bold">bentuk[2]</text>
+  <text x="640" y="435" font-size="11">Lingkaran</text>
+  <text x="640" y="453" font-size="10">r = 7.0</text>
+  <line x1="630" y1="460" x2="750" y2="460" stroke="#666" stroke-width="1"/>
+  <text x="640" y="478" font-size="10">hitungLuas():</text>
+  <text x="640" y="493" font-size="10">return 153.94</text>
+  
+  <!-- Arrows from pointer to objects -->
+  <path d="M 300 415 L 350 455" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowpoly)"/>
+  <path d="M 175 440 L 290 455" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowpoly)" stroke-dasharray="5,5"/>
+  <path d="M 175 440 L 485 455" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowpoly)" stroke-dasharray="5,5"/>
+  <path d="M 175 440 L 625 455" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowpoly)" stroke-dasharray="5,5"/>
+  
+  <defs>
+    <marker id="arrowpoly" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2e7d32"/>
+    </marker>
+  </defs>
+</svg>
