@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">
+    Visualisasi Struct Mahasiswa dalam Memori
+  </text>
+  
+  <!-- Memory Address Labels -->
+  <text x="50" y="70" font-size="14" fill="#666">Alamat Memori</text>
+  <text x="250" y="70" font-size="14" fill="#666">Member</text>
+  <text x="450" y="70" font-size="14" fill="#666">Tipe Data</text>
+  <text x="620" y="70" font-size="14" fill="#666">Nilai</text>
+  
+  <!-- Header line -->
+  <line x1="30" y1="80" x2="770" y2="80" stroke="#333" stroke-width="2"/>
+  
+  <!-- Member 1: nama (string) -->
+  <rect x="30" y="100" width="160" height="60" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="110" y="135" text-anchor="middle" font-size="13" font-family="monospace" fill="#333">0x1000</text>
+  
+  <rect x="210" y="100" width="200" height="60" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+  <text x="310" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#0D47A1">nama</text>
+  
+  <rect x="430" y="100" width="150" height="60" fill="#E1F5FE" stroke="#1976D2" stroke-width="2"/>
+  <text x="505" y="135" text-anchor="middle" font-size="13" fill="#01579B">string</text>
+  
+  <rect x="600" y="100" width="170" height="60" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="685" y="135" text-anchor="middle" font-size="12" fill="#4A148C">"Alice"</text>
+  
+  <!-- Member 2: nim (string) -->
+  <rect x="30" y="170" width="160" height="60" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+  <text x="110" y="205" text-anchor="middle" font-size="13" font-family="monospace" fill="#333">0x1020</text>
+  
+  <rect x="210" y="170" width="200" height="60" fill="#C8E6C9" stroke="#388E3C" stroke-width="2"/>
+  <text x="310" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#1B5E20">nim</text>
+  
+  <rect x="430" y="170" width="150" height="60" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+  <text x="505" y="205" text-anchor="middle" font-size="13" fill="#2E7D32">string</text>
+  
+  <rect x="600" y="170" width="170" height="60" fill="#FFF3E0" stroke="#EF6C00" stroke-width="2"/>
+  <text x="685" y="205" text-anchor="middle" font-size="12" fill="#E65100">"2024001"</text>
+  
+  <!-- Member 3: jurusan (string) -->
+  <rect x="30" y="240" width="160" height="60" fill="#FFF3E0" stroke="#F57C00" stroke-width="2"/>
+  <text x="110" y="275" text-anchor="middle" font-size="13" font-family="monospace" fill="#333">0x1040</text>
+  
+  <rect x="210" y="240" width="200" height="60" fill="#FFE0B2" stroke="#F57C00" stroke-width="2"/>
+  <text x="310" y="275" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">jurusan</text>
+  
+  <rect x="430" y="240" width="150" height="60" fill="#FFF3E0" stroke="#F57C00" stroke-width="2"/>
+  <text x="505" y="275" text-anchor="middle" font-size="13" fill="#EF6C00">string</text>
+  
+  <rect x="600" y="240" width="170" height="60" fill="#E0F2F1" stroke="#00695C" stroke-width="2"/>
+  <text x="685" y="275" text-anchor="middle" font-size="12" fill="#004D40">"Informatika"</text>
+  
+  <!-- Member 4: ipk (float) -->
+  <rect x="30" y="310" width="160" height="60" fill="#FCE4EC" stroke="#C2185B" stroke-width="2"/>
+  <text x="110" y="345" text-anchor="middle" font-size="13" font-family="monospace" fill="#333">0x1060</text>
+  
+  <rect x="210" y="310" width="200" height="60" fill="#F8BBD0" stroke="#C2185B" stroke-width="2"/>
+  <text x="310" y="345" text-anchor="middle" font-size="14" font-weight="bold" fill="#880E4F">ipk</text>
+  
+  <rect x="430" y="310" width="150" height="60" fill="#FCE4EC" stroke="#C2185B" stroke-width="2"/>
+  <text x="505" y="345" text-anchor="middle" font-size="13" fill="#AD1457">float</text>
+  
+  <rect x="600" y="310" width="170" height="60" fill="#E8EAF6" stroke="#3949AB" stroke-width="2"/>
+  <text x="685" y="345" text-anchor="middle" font-size="12" fill="#1A237E">3.85</text>
+  
+  <!-- Member 5: tahunMasuk (int) -->
+  <rect x="30" y="380" width="160" height="60" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="110" y="415" text-anchor="middle" font-size="13" font-family="monospace" fill="#333">0x1064</text>
+  
+  <rect x="210" y="380" width="200" height="60" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="310" y="415" text-anchor="middle" font-size="14" font-weight="bold" fill="#4A148C">tahunMasuk</text>
+  
+  <rect x="430" y="380" width="150" height="60" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="505" y="415" text-anchor="middle" font-size="13" fill="#6A1B9A">int</text>
+  
+  <rect x="600" y="380" width="170" height="60" fill="#FFF9C4" stroke="#F9A825" stroke-width="2"/>
+  <text x="685" y="415" text-anchor="middle" font-size="12" fill="#F57F17">2024</text>
+  
+  <!-- Brace showing struct extent -->
+  <path d="M 10 100 Q 5 100 5 105 L 5 435 Q 5 440 10 440" 
+        fill="none" stroke="#D32F2F" stroke-width="3"/>
+  <text x="5" y="270" font-size="16" font-weight="bold" fill="#D32F2F" 
+        transform="rotate(-90 5 270)">struct Mahasiswa</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="465" width="15" height="15" fill="#E3F2FD" stroke="#1976D2"/>
+  <text x="50" y="477" font-size="12" fill="#666">Memori member struct</text>
+  
+  <rect x="200" y="465" width="15" height="15" fill="#FFCDD2" stroke="#D32F2F"/>
+  <text x="220" y="477" font-size="12" fill="#666">Batasan struct</text>
+</svg>
