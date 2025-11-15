@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+      .title { font-size: 16px; font-weight: bold; }
+      .arrow { stroke: #333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .success { fill: #c8e6c9; stroke: #388e3c; }
+      .error { fill: #ffcdd2; stroke: #d32f2f; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="text title">Alur Kerja File Handling</text>
+  
+  <!-- Step 1: Buka File -->
+  <rect x="50" y="60" width="200" height="60" class="box" rx="5"/>
+  <text x="150" y="85" class="text title">1. Buka File</text>
+  <text x="150" y="105" class="text">ifstream / ofstream</text>
+  
+  <!-- Arrow to check -->
+  <path d="M 250 90 L 300 90" class="arrow"/>
+  
+  <!-- Check: File OK? -->
+  <path d="M 300 60 L 370 90 L 300 120 Z" fill="#fff9c4" stroke="#f57c00" stroke-width="2"/>
+  <text x="335" y="95" class="text">File OK?</text>
+  
+  <!-- Arrow YES to operations -->
+  <path d="M 370 90 L 420 90" class="arrow"/>
+  <text x="395" y="85" class="text" style="font-size: 12px;">Ya</text>
+  
+  <!-- Step 2: Operasi File -->
+  <rect x="420" y="60" width="200" height="60" class="box success" rx="5"/>
+  <text x="520" y="85" class="text title">2. Operasi File</text>
+  <text x="520" y="105" class="text">Baca / Tulis Data</text>
+  
+  <!-- Arrow to close -->
+  <path d="M 620 90 L 670 90" class="arrow"/>
+  
+  <!-- Step 3: Tutup File -->
+  <rect x="550" y="160" width="200" height="60" class="box success" rx="5"/>
+  <text x="650" y="185" class="text title">3. Tutup File</text>
+  <text x="650" y="205" class="text">file.close()</text>
+  
+  <!-- Arrow from operations to close -->
+  <path d="M 520 120 L 520 190 L 550 190" class="arrow"/>
+  
+  <!-- Arrow NO to error handling -->
+  <path d="M 335 120 L 335 190" class="arrow"/>
+  <text x="320" y="155" class="text" style="font-size: 12px;">Tidak</text>
+  
+  <!-- Error Handling -->
+  <rect x="235" y="160" width="200" height="60" class="box error" rx="5"/>
+  <text x="335" y="185" class="text title">Error Handling</text>
+  <text x="335" y="205" class="text">File tidak dapat dibuka</text>
+  
+  <!-- Resource management note -->
+  <rect x="50" y="260" width="700" height="100" fill="#f5f5f5" stroke="#666" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <text x="400" y="285" class="text title" style="fill: #d32f2f;">⚠️ Pentingnya Menutup File</text>
+  <text x="400" y="310" class="text">• Memastikan data ter-flush dari buffer ke disk</text>
+  <text x="400" y="330" class="text">• Membebaskan resource sistem</text>
+  <text x="400" y="350" class="text">• Mencegah korupsi data dan memory leak</text>
+</svg>
