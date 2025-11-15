@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">
+    Perbandingan Struct vs Union dalam Memori
+  </text>
+  
+  <!-- STRUCT Section -->
+  <text x="225" y="70" text-anchor="middle" font-size="18" font-weight="bold" fill="#1976D2">
+    STRUCT
+  </text>
+  <text x="225" y="92" text-anchor="middle" font-size="13" fill="#666">
+    (Setiap member punya memori sendiri)
+  </text>
+  
+  <!-- Struct Member 1: int -->
+  <rect x="50" y="110" width="350" height="80" fill="#E3F2FD" stroke="#1976D2" stroke-width="3"/>
+  <text x="70" y="135" font-size="14" font-weight="bold" fill="#0D47A1">int a</text>
+  <text x="70" y="158" font-size="12" fill="#1565C0">Ukuran: 4 bytes</text>
+  <text x="70" y="178" font-size="11" font-family="monospace" fill="#666">Alamat: 0x1000</text>
+  <rect x="250" y="125" width="130" height="50" fill="#BBDEFB" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="315" y="155" text-anchor="middle" font-size="16" font-weight="bold" fill="#0D47A1">10</text>
+  
+  <!-- Struct Member 2: float -->
+  <rect x="50" y="200" width="350" height="80" fill="#C8E6C9" stroke="#388E3C" stroke-width="3"/>
+  <text x="70" y="225" font-size="14" font-weight="bold" fill="#1B5E20">float b</text>
+  <text x="70" y="248" font-size="12" fill="#2E7D32">Ukuran: 4 bytes</text>
+  <text x="70" y="268" font-size="11" font-family="monospace" fill="#666">Alamat: 0x1004</text>
+  <rect x="250" y="215" width="130" height="50" fill="#A5D6A7" stroke="#388E3C" stroke-width="2" rx="5"/>
+  <text x="315" y="245" text-anchor="middle" font-size="16" font-weight="bold" fill="#1B5E20">3.14</text>
+  
+  <!-- Struct Member 3: char -->
+  <rect x="50" y="290" width="350" height="80" fill="#FFE0B2" stroke="#F57C00" stroke-width="3"/>
+  <text x="70" y="315" font-size="14" font-weight="bold" fill="#E65100">char c</text>
+  <text x="70" y="338" font-size="12" fill="#EF6C00">Ukuran: 1 byte</text>
+  <text x="70" y="358" font-size="11" font-family="monospace" fill="#666">Alamat: 0x1008</text>
+  <rect x="250" y="305" width="130" height="50" fill="#FFCC80" stroke="#F57C00" stroke-width="2" rx="5"/>
+  <text x="315" y="335" text-anchor="middle" font-size="16" font-weight="bold" fill="#E65100">'X'</text>
+  
+  <!-- Struct Total Size -->
+  <rect x="50" y="390" width="350" height="50" fill="#F5F5F5" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="225" y="420" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">
+    Total: 12 bytes (minimal)
+  </text>
+  
+  <!-- Arrow and note -->
+  <path d="M 70 460 L 70 480 M 70 470 L 380 470 L 380 480" 
+        stroke="#1976D2" stroke-width="2" fill="none"/>
+  <text x="225" y="505" text-anchor="middle" font-size="13" fill="#1976D2">
+    Semua nilai tersimpan bersamaan
+  </text>
+  
+  <!-- UNION Section -->
+  <text x="675" y="70" text-anchor="middle" font-size="18" font-weight="bold" fill="#D32F2F">
+    UNION
+  </text>
+  <text x="675" y="92" text-anchor="middle" font-size="13" fill="#666">
+    (Member berbagi memori yang sama)
+  </text>
+  
+  <!-- Union Overlapping Memory -->
+  <rect x="500" y="110" width="350" height="260" fill="#FFEBEE" stroke="#D32F2F" stroke-width="3" stroke-dasharray="8,4"/>
+  
+  <!-- Union Member 1: int (active) -->
+  <rect x="520" y="130" width="310" height="70" fill="#EF9A9A" stroke="#C62828" stroke-width="3"/>
+  <text x="540" y="155" font-size="14" font-weight="bold" fill="#B71C1C">int a</text>
+  <text x="540" y="175" font-size="12" fill="#C62828">4 bytes</text>
+  <rect x="680" y="140" width="130" height="50" fill="#FFCDD2" stroke="#C62828" stroke-width="2" rx="5"/>
+  <text x="745" y="170" text-anchor="middle" font-size="16" font-weight="bold" fill="#B71C1C">42</text>
+  
+  <!-- Union Member 2: float (overlapped) -->
+  <rect x="520" y="210" width="310" height="70" fill="#B0BEC5" stroke="#546E7A" stroke-width="2" opacity="0.6"/>
+  <text x="540" y="235" font-size="14" fill="#37474F">float b</text>
+  <text x="540" y="255" font-size="12" fill="#546E7A">4 bytes</text>
+  <rect x="680" y="220" width="130" height="50" fill="#CFD8DC" stroke="#546E7A" stroke-width="1" rx="5" opacity="0.6"/>
+  <text x="745" y="250" text-anchor="middle" font-size="14" fill="#455A64">---</text>
+  
+  <!-- Union Member 3: char (overlapped) -->
+  <rect x="520" y="290" width="310" height="70" fill="#B0BEC5" stroke="#546E7A" stroke-width="2" opacity="0.6"/>
+  <text x="540" y="315" font-size="14" fill="#37474F">char c</text>
+  <text x="540" y="335" font-size="12" fill="#546E7A">1 byte</text>
+  <rect x="680" y="300" width="130" height="50" fill="#CFD8DC" stroke="#546E7A" stroke-width="1" rx="5" opacity="0.6"/>
+  <text x="745" y="330" text-anchor="middle" font-size="14" fill="#455A64">---</text>
+  
+  <!-- Union Total Size -->
+  <rect x="500" y="390" width="350" height="50" fill="#F5F5F5" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="675" y="420" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">
+    Total: 4 bytes
+  </text>
+  
+  <!-- Arrow and note -->
+  <path d="M 520 460 L 520 480 M 520 470 L 830 470 L 830 480" 
+        stroke="#D32F2F" stroke-width="2" fill="none"/>
+  <text x="675" y="505" text-anchor="middle" font-size="13" fill="#D32F2F">
+    Hanya 1 nilai aktif pada satu waktu
+  </text>
+  
+  <!-- Central comparison -->
+  <line x1="425" y1="250" x2="475" y2="250" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+    <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+  </marker>
+  
+  <text x="450" y="245" text-anchor="middle" font-size="14" font-weight="bold" fill="#666">VS</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="525" width="20" height="15" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="75" y="537" font-size="12" fill="#666">Member aktif</text>
+  
+  <rect x="200" y="525" width="20" height="15" fill="#B0BEC5" stroke="#546E7A" stroke-width="2" opacity="0.6"/>
+  <text x="225" y="537" font-size="12" fill="#666">Member tidak aktif</text>
+  
+  <rect x="400" y="525" width="20" height="15" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="425" y="537" font-size="12" fill="#666">Shared memory area</text>
+</svg>
