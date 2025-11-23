@@ -27,9 +27,9 @@ Setelah mempelajari materi ini, mahasiswa diharapkan dapat:
 ## 🌐 Presentasi Online
 
 Presentasi HTML dapat diakses di GitHub Pages:
-```
-https://anindito.github.io/pertemuan-09/
-```
+
+[sini](https://anindito.github.io/pertemuan-09/)
+
 
 ## 📖 Cara Menggunakan
 
