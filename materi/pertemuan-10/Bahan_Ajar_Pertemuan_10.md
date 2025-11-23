@@ -1,5 +1,7 @@
 # BAB 10: ARRAY MULTIDIMENSI
 
+[Slide](https://anindito.github.io/pertemuan-10/)
+
 ## 10.1 Pendahuluan
 
 Selamat datang di pertemuan kesepuluh mata kuliah Dasar-Dasar Pemrograman. Pada pertemuan sebelumnya, kita telah mempelajari array satu dimensi yang dapat menyimpan sekumpulan data dalam bentuk baris. Pada pertemuan ini, kita akan melangkah lebih jauh dengan mempelajari array multidimensi, khususnya array dua dimensi yang sangat berguna untuk merepresentasikan data dalam bentuk tabel atau matriks.
