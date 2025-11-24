@@ -1,6 +1,6 @@
-# BAB 13: C++ DI PLATFORM LAIN DAN DEVELOPMENT TOOLS
+# BAB 15: C++ DI PLATFORM LAIN DAN DEVELOPMENT TOOLS
 
-## 13.1 Pendahuluan
+## 15.1 Pendahuluan
 
 Selamat datang di pertemuan ketigabelas mata kuliah Dasar-Dasar Pemrograman. Sejauh ini, kita telah mempelajari berbagai konsep fundamental pemrograman C++ mulai dari struktur kontrol, fungsi, array, pointer, hingga struct. Pada pertemuan ini, kita akan melangkah keluar dari lingkungan pembelajaran konvensional dan mengeksplorasi bagaimana C++ digunakan di berbagai platform dan domain aplikasi yang berbeda.
 
