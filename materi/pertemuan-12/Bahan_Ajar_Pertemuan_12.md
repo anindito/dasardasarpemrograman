@@ -1,5 +1,7 @@
 # BAB 12: STRUCT, UNION, DAN TYPEDEF
 
+[Slide](https://anindito.github.io/pertemuan-12/)
+
 ## 12.1 Pendahuluan
 
 Selamat datang di pertemuan kedua belas mata kuliah Dasar-Dasar Pemrograman. Setelah mempelajari array dan pointer sebagai struktur data fundamental, kita akan memasuki topik yang sangat penting dalam pengorganisasian data: tipe data bentukan (user-defined types). Kemampuan untuk membuat tipe data sendiri adalah salah satu fitur powerful yang membedakan bahasa pemrograman tingkat tinggi dari bahasa assembly.
