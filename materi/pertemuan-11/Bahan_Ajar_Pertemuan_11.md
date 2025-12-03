@@ -1,5 +1,7 @@
 # BAB 11: POINTER DAN MEMORI DINAMIS
 
+[Slide](https://anindito.github.io/pertemuan-11/)
+
 ## 11.1 Pendahuluan
 
 Selamat datang di pertemuan kesebelas mata kuliah Dasar-Dasar Pemrograman. Setelah mempelajari array sebagai struktur data fundamental, kita akan memasuki topik yang sangat penting namun sering dianggap menantang oleh banyak programmer pemula: pointer dan manajemen memori dinamis. Pointer adalah salah satu fitur paling powerful dalam C++ yang membedakannya dari banyak bahasa pemrograman modern lainnya.
