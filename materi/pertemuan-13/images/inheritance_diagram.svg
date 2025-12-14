@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#2c3e50">Inheritance (Pewarisan) - Hierarki Class</text>
+  <text x="400" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7f8c8d">Base Class → Derived Classes</text>
+  
+  <!-- Base Class: BangunDatar -->
+  <g transform="translate(275, 80)">
+    <rect x="0" y="0" width="250" height="140" rx="8" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <text x="125" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">BangunDatar</text>
+    <text x="125" y="42" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d6eaf8">(Base Class / Parent)</text>
+    
+    <rect x="10" y="55" width="230" height="75" rx="5" fill="white"/>
+    <line x1="10" y1="85" x2="240" y2="85" stroke="#bdc3c7"/>
+    <text x="20" y="75" font-family="Courier New, monospace" font-size="10" fill="#8e44ad"># nama: string</text>
+    <text x="20" y="100" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ tampilkanDasar()</text>
+    <text x="20" y="115" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ virtual hitungLuas()</text>
+  </g>
+  
+  <!-- Inheritance arrows -->
+  <g stroke="#2c3e50" stroke-width="2" fill="none">
+    <!-- Arrow to Persegi -->
+    <path d="M 400 220 L 400 250 L 150 250 L 150 280"/>
+    <polygon points="150,280 145,270 155,270" fill="#2c3e50"/>
+    
+    <!-- Arrow to Lingkaran -->
+    <path d="M 400 220 L 400 280"/>
+    <polygon points="400,280 395,270 405,270" fill="#2c3e50"/>
+    
+    <!-- Arrow to Segitiga -->
+    <path d="M 400 220 L 400 250 L 650 250 L 650 280"/>
+    <polygon points="650,280 645,270 655,270" fill="#2c3e50"/>
+  </g>
+  
+  <!-- Inheritance label -->
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">extends / inherits</text>
+  
+  <!-- Derived Class: Persegi -->
+  <g transform="translate(25, 280)">
+    <rect x="0" y="0" width="230" height="170" rx="8" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="115" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Persegi</text>
+    <text x="115" y="42" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#fadbd8">(Derived Class)</text>
+    
+    <rect x="10" y="55" width="210" height="105" rx="5" fill="white"/>
+    <line x1="10" y1="85" x2="220" y2="85" stroke="#bdc3c7"/>
+    <text x="20" y="75" font-family="Courier New, monospace" font-size="10" fill="#8e44ad">- sisi: double</text>
+    <text x="20" y="100" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ hitungLuas()</text>
+    <text x="20" y="115" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ hitungKeliling()</text>
+    <text x="20" y="130" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ tampilkan()</text>
+    
+    <!-- Inherited indicator -->
+    <text x="20" y="150" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d" font-style="italic">+ mewarisi dari BangunDatar</text>
+  </g>
+  
+  <!-- Derived Class: Lingkaran -->
+  <g transform="translate(285, 280)">
+    <rect x="0" y="0" width="230" height="170" rx="8" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+    <text x="115" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Lingkaran</text>
+    <text x="115" y="42" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d5f5e3">(Derived Class)</text>
+    
+    <rect x="10" y="55" width="210" height="105" rx="5" fill="white"/>
+    <line x1="10" y1="85" x2="220" y2="85" stroke="#bdc3c7"/>
+    <text x="20" y="75" font-family="Courier New, monospace" font-size="10" fill="#8e44ad">- jariJari: double</text>
+    <text x="20" y="100" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ hitungLuas()</text>
+    <text x="20" y="115" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ hitungKeliling()</text>
+    <text x="20" y="130" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ tampilkan()</text>
+    
+    <!-- Inherited indicator -->
+    <text x="20" y="150" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d" font-style="italic">+ mewarisi dari BangunDatar</text>
+  </g>
+  
+  <!-- Derived Class: Segitiga -->
+  <g transform="translate(545, 280)">
+    <rect x="0" y="0" width="230" height="170" rx="8" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <text x="115" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Segitiga</text>
+    <text x="115" y="42" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#e8daef">(Derived Class)</text>
+    
+    <rect x="10" y="55" width="210" height="105" rx="5" fill="white"/>
+    <line x1="10" y1="85" x2="220" y2="85" stroke="#bdc3c7"/>
+    <text x="20" y="75" font-family="Courier New, monospace" font-size="10" fill="#8e44ad">- alas, tinggi: double</text>
+    <text x="20" y="100" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ hitungLuas()</text>
+    <text x="20" y="115" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ hitungKeliling()</text>
+    <text x="20" y="130" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ tampilkan()</text>
+    
+    <!-- Inherited indicator -->
+    <text x="20" y="150" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d" font-style="italic">+ mewarisi dari BangunDatar</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(30, 80)">
+    <rect x="0" y="0" width="180" height="100" rx="5" fill="white" stroke="#bdc3c7"/>
+    <text x="90" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">LEGEND</text>
+    <line x1="10" y1="28" x2="170" y2="28" stroke="#bdc3c7"/>
+    
+    <polygon points="90,45 85,55 95,55" fill="#2c3e50"/>
+    <line x1="90" y1="55" x2="90" y2="65" stroke="#2c3e50" stroke-width="2"/>
+    <text x="110" y="58" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">Inheritance</text>
+    
+    <text x="20" y="80" font-family="Courier New, monospace" font-size="9" fill="#8e44ad"># protected</text>
+    <text x="100" y="80" font-family="Courier New, monospace" font-size="9" fill="#27ae60">+ public</text>
+    <text x="20" y="95" font-family="Courier New, monospace" font-size="9" fill="#e74c3c">- private</text>
+  </g>
+</svg>
