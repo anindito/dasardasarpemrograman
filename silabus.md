@@ -6,7 +6,8 @@
 **Program Studi:** Teknik Informatika/Ilmu Komputer  
 **Kode Mata Kuliah:** DDP101  
 **Semester:** 1  
-**Bobot:** 3 SKS (2 SKS Teori, 1 SKS Praktikum)
+**Bobot:** 3 SKS (2 SKS Teori, 1 SKS Praktikum)  
+**IDE Utama:** Code::Blocks (dengan compiler MinGW GCC)
 
 **Referensi Utama:**
 1. Deitel, P. J., & Deitel, H. M. (2016). C++ How to Program (10th Edition). Pearson.
@@ -320,14 +321,15 @@
 2. Akses dan manipulasi elemen array
 3. Array sebagai parameter fungsi
 4. Algoritma pencarian pada array (sequential search)
-
+5. Algoritma pengurutan dasar (bubble sort, selection sort)
+6. Array of characters dan C-string
 
 **Metode Pembelajaran:** Ceramah, demonstrasi, latihan pemrograman
 
 **Latihan dan Contoh:**
 - Program menghitung statistik data dalam array
 - Program pencarian nilai dalam array
-- Program pengurutan array dengan metode sederhana
+- Program pengurutan array dengan beberapa metode
 
 **Referensi:**
 - C++ How to Program, Ch. 7
@@ -425,7 +427,8 @@
 - Program data mahasiswa menggunakan struct
 - Program sistem inventory dengan array of struct
 - Program penjadwalan menggunakan nested struct
-
+- Program demonstrasi union untuk memory efficiency
+- Program dengan typedef untuk readability
 
 **Referensi:**
 - C++ How to Program, Ch. 10
@@ -434,60 +437,7 @@
 
 ---
 
-### **Pertemuan 13: C++ di Platform Lain dan Development Tools**
-
-**CPMK Terkait:** CPMK 1, CPMK 4  
-**Sub-CPMK:** 1.3, 4.1
-
-**Tujuan Pembelajaran:**
-- Mahasiswa dapat memahami penerapan C++ di berbagai platform dan domain
-- Mahasiswa dapat menjelaskan perbedaan development environment untuk berbagai platform
-- Mahasiswa dapat membuat program C++ sederhana untuk platform embedded
-- Mahasiswa dapat menggunakan development tools dan debugging tools untuk berbagai platform
-
-**Materi:**
-1. C++ untuk Embedded Systems (Arduino, ESP32)
-   - Setup development environment
-   - Digital I/O dan analog input
-   - Serial communication dan debugging
-   - Program blink LED dan sensor reading
-2. C++ untuk Competitive Programming
-   - Fast I/O techniques
-   - Common algorithms dan data structures
-   - Online judge platforms (Codeforces, LeetCode)
-   - Debugging strategies untuk competitive programming
-3. C++ untuk Game Development
-   - Pengenalan game engines (SDL, SFML)
-   - Game loop concept
-   - Sprite dan basic graphics
-4. Cross-platform Development
-   - Compiler differences (GCC, Clang, MSVC)
-   - Build systems (Makefile, CMake basics)
-   - Platform-specific code handling
-5. Development and Debugging Tools
-   - IDE debugging features (VS Code, CLion, Visual Studio)
-   - Memory debugging (Valgrind basics)
-   - Static analysis tools
-   - Version control dengan Git (pengenalan)
-
-**Metode Pembelajaran:** Ceramah, demonstrasi, hands-on practice
-
-**Latihan dan Contoh:**
-- Program Arduino untuk kontrol LED dan sensor dengan serial debugging
-- Program competitive programming untuk sorting dan searching
-- Program game sederhana dengan SDL/SFML (Snake atau Pong)
-- Setup project dengan CMake
-- Debugging memory leaks dengan Valgrind
-
-**Referensi:**
-- Arduino C++ Programming (online documentation)
-- Competitive Programming 3 by Steven Halim
-- Beginning C++ Through Game Programming by Michael Dawson
-- Professional CMake: A Practical Guide
-
----
-
-### **Pertemuan 14: Pengenalan Pemrograman Berorientasi Objek**
+### **Pertemuan 13: Pengenalan Pemrograman Berorientasi Objek**
 
 **CPMK Terkait:** CPMK 5  
 **Sub-CPMK:** 5.2
@@ -549,7 +499,7 @@
 
 ---
 
-### **Pertemuan 15: File Handling dan Exception Handling**
+### **Pertemuan 14: File Handling dan Exception Handling**
 
 **CPMK Terkait:** CPMK 4, CPMK 5  
 **Sub-CPMK:** 4.2, 5.1
@@ -602,7 +552,8 @@
 - Program calculator dengan exception handling untuk division by zero
 - Program validasi input dengan exception handling
 - Program CRUD sederhana dengan file sebagai database dan comprehensive error handling
-
+- Program yang mendemonstrasikan stack unwinding
+- Program dengan custom exception classes
 
 **Referensi:**
 - C++ How to Program, Ch. 14, 16, 17
@@ -611,11 +562,106 @@
 
 ---
 
+### **Pertemuan 15: C++ di Platform Lain dan Development Tools**
+
+**CPMK Terkait:** CPMK 1, CPMK 4  
+**Sub-CPMK:** 1.3, 4.1
+
+**Tujuan Pembelajaran:**
+- Mahasiswa dapat memahami penerapan C++ di berbagai platform dan domain
+- Mahasiswa dapat menjelaskan perbedaan development environment untuk berbagai platform
+- Mahasiswa dapat membuat program C++ sederhana untuk platform embedded
+- Mahasiswa dapat menggunakan development tools dan debugging tools untuk berbagai platform
+
+**Materi:**
+1. C++ untuk Embedded Systems (Arduino, ESP32)
+   - Setup development environment
+   - Digital I/O dan analog input
+   - Serial communication dan debugging
+   - Program blink LED dan sensor reading
+2. C++ untuk Competitive Programming
+   - Fast I/O techniques
+   - Common algorithms dan data structures
+   - Online judge platforms (Codeforces, LeetCode)
+   - Debugging strategies untuk competitive programming
+3. C++ untuk Game Development
+   - Pengenalan game engines (SDL, SFML)
+   - Game loop concept
+   - Sprite dan basic graphics
+4. Cross-platform Development
+   - Compiler differences (GCC, Clang, MSVC)
+   - Build systems (Makefile, CMake basics)
+   - Platform-specific code handling
+5. Development and Debugging Tools
+   - IDE debugging features (Code::Blocks, VS Code, CLion, Visual Studio)
+   - Memory debugging (Valgrind basics)
+   - Static analysis tools
+   - Version control dengan Git (pengenalan)
+
+**Metode Pembelajaran:** Ceramah, demonstrasi, hands-on practice
+
+**Latihan dan Contoh:**
+
+**Bagian 1: Pengenalan Platform Lain (Materi Baru)**
+- Demo program Arduino untuk kontrol LED dan sensor dengan serial debugging
+- Demo program competitive programming untuk sorting dan searching
+- Demo program game sederhana dengan SDL/SFML (Snake atau Pong)
+- Demo setup project dengan CMake
+- Demo debugging dengan Code::Blocks debugger
+
+**Bagian 2: Latihan Review UAS (Pertemuan 9-14)**
+
+**Level 1: Array dan Pointer**
+- Implementasi sistem nilai mahasiswa dengan array of struct
+- Program manipulasi matriks dengan dynamic allocation
+- Program linked list sederhana menggunakan pointer
+- Latihan sorting dan searching pada array of struct
+
+**Level 2: OOP dan File Handling**
+- Program sistem perpustakaan dengan class dan file storage
+- Program bank account dengan inheritance dan file transaction log
+- Program inventory dengan OOP dan exception handling
+- Latihan file I/O dengan proper error handling
+
+**Level 3: Integrasi Penuh**
+- Program manajemen data mahasiswa (struct, array, file I/O, exception handling)
+- Program aplikasi kasir sederhana (OOP, file handling, validation)
+- Program game sederhana (OOP, array 2D, file untuk high score)
+- Kombinasi pointer, struct, dan file handling
+
+**Soal-soal Latihan Review:**
+1. Implementasi sorting dan searching pada array of struct
+2. Dynamic memory management untuk struktur data
+3. File handling dengan proper error handling
+4. OOP design untuk aplikasi sederhana
+5. Debugging program dengan berbagai jenis error
+6. Exception handling untuk input validation
+7. Kombinasi pointer, struct, dan file handling
+8. Implementasi inheritance untuk sistem hirarki
+
+**Metode Review:**
+- Diskusi kesulitan yang dihadapi mahasiswa
+- Problem solving bersama untuk soal-soal kompleks
+- Tips dan trik untuk UAS
+- Q&A session
+
+**Referensi:**
+- Arduino C++ Programming (online documentation)
+- Competitive Programming 3 by Steven Halim
+- Beginning C++ Through Game Programming by Michael Dawson
+- Professional CMake: A Practical Guide
+
+---
+
 ### **Pertemuan 16: Ujian Akhir Semester (UAS)**
 
 **CPMK Terkait:** CPMK 1, CPMK 2, CPMK 3, CPMK 4, CPMK 5
 
 **Evaluasi:** Penilaian pemahaman mahasiswa terhadap keseluruhan materi perkuliahan.
+
+**Cakupan Materi:**
+- Materi sebelum UTS (Pertemuan 1-7): 40%
+- Materi setelah UTS (Pertemuan 9-15): 60%
 
 ---
 
@@ -648,6 +694,12 @@
 
 ---
 
-- **CPMK 5**: 2 pertemuan (Pertemuan 14, 15)
+### Distribusi Pertemuan per CPMK:
+
+- **CPMK 1**: 2 pertemuan (Pertemuan 1, 15)
+- **CPMK 2**: 4 pertemuan (Pertemuan 2, 3, 4, 5)
+- **CPMK 3**: 6 pertemuan (Pertemuan 6, 7, 9, 10, 11, 12)
+- **CPMK 4**: 3 pertemuan (Pertemuan 7, 14, 15)
+- **CPMK 5**: 2 pertemuan (Pertemuan 13, 14)
 
 Total: 16 pertemuan (termasuk UTS dan UAS)
