@@ -1,5 +1,5 @@
 # BAB 15: C++ DI PLATFORM LAIN DAN REVIEW UAS
-
+[Slide](https://anindito.github.io/pertemuan-15/)
 ## 15.1 Pendahuluan
 
 Selamat datang di pertemuan kelima belas, pertemuan terakhir sebelum Ujian Akhir Semester (UAS). Sepanjang empat belas pertemuan sebelumnya, Anda telah mempelajari dasar-dasar pemrograman C++ dengan fokus pada pengembangan aplikasi konsol menggunakan Code::Blocks. Namun, tahukah Anda bahwa C++ adalah salah satu bahasa pemrograman paling serbaguna yang digunakan di berbagai industri dan platform?
