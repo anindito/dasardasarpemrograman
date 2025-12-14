@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <!-- Background -->
+  <rect width="900" height="550" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#2c3e50">Hubungan Class dan Object</text>
+  <text x="450" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7f8c8d">Class sebagai Blueprint, Object sebagai Instance</text>
+  
+  <!-- CLASS Box (Blueprint) -->
+  <g transform="translate(50, 90)">
+    <rect x="0" y="0" width="280" height="350" rx="10" fill="#ecf0f1" stroke="#3498db" stroke-width="3"/>
+    <rect x="0" y="0" width="280" height="45" rx="10" fill="#3498db"/>
+    <rect x="0" y="35" width="280" height="15" fill="#3498db"/>
+    
+    <text x="140" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">CLASS: Mahasiswa</text>
+    <text x="140" y="55" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#3498db">(Blueprint / Template)</text>
+    
+    <!-- Attributes section -->
+    <rect x="15" y="75" width="250" height="120" rx="5" fill="white" stroke="#bdc3c7"/>
+    <text x="140" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">ATRIBUT (Data Members)</text>
+    <line x1="25" y1="105" x2="255" y2="105" stroke="#bdc3c7"/>
+    <text x="30" y="125" font-family="Courier New, monospace" font-size="11" fill="#8e44ad">- nama: string</text>
+    <text x="30" y="145" font-family="Courier New, monospace" font-size="11" fill="#8e44ad">- nim: string</text>
+    <text x="30" y="165" font-family="Courier New, monospace" font-size="11" fill="#8e44ad">- jurusan: string</text>
+    <text x="30" y="185" font-family="Courier New, monospace" font-size="11" fill="#8e44ad">- ipk: float</text>
+    
+    <!-- Methods section -->
+    <rect x="15" y="210" width="250" height="125" rx="5" fill="white" stroke="#bdc3c7"/>
+    <text x="140" y="230" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">METHOD (Member Functions)</text>
+    <line x1="25" y1="240" x2="255" y2="240" stroke="#bdc3c7"/>
+    <text x="30" y="260" font-family="Courier New, monospace" font-size="11" fill="#27ae60">+ getNama(): string</text>
+    <text x="30" y="280" font-family="Courier New, monospace" font-size="11" fill="#27ae60">+ setIPK(float): void</text>
+    <text x="30" y="300" font-family="Courier New, monospace" font-size="11" fill="#27ae60">+ hitungPredikat(): string</text>
+    <text x="30" y="320" font-family="Courier New, monospace" font-size="11" fill="#27ae60">+ tampilkan(): void</text>
+  </g>
+  
+  <!-- Arrow from Class to Objects -->
+  <g>
+    <path d="M 330 265 L 400 180" stroke="#2c3e50" stroke-width="2" stroke-dasharray="8,4"/>
+    <path d="M 330 265 L 400 400" stroke="#2c3e50" stroke-width="2" stroke-dasharray="8,4"/>
+    <text x="355" y="200" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2c3e50">new</text>
+    <text x="355" y="370" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2c3e50">new</text>
+    <polygon points="400,180 390,185 393,175" fill="#2c3e50"/>
+    <polygon points="400,400 390,395 393,405" fill="#2c3e50"/>
+  </g>
+  
+  <!-- OBJECT 1 -->
+  <g transform="translate(420, 70)">
+    <rect x="0" y="0" width="230" height="185" rx="10" fill="#e8f6f3" stroke="#1abc9c" stroke-width="3"/>
+    <rect x="0" y="0" width="230" height="40" rx="10" fill="#1abc9c"/>
+    <rect x="0" y="30" width="230" height="15" fill="#1abc9c"/>
+    
+    <text x="115" y="27" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">mhs1 : Mahasiswa</text>
+    <text x="115" y="55" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1abc9c">(Object 1)</text>
+    
+    <rect x="15" y="70" width="200" height="100" rx="5" fill="white" stroke="#bdc3c7"/>
+    <text x="115" y="87" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">Data Instance:</text>
+    <text x="25" y="107" font-family="Courier New, monospace" font-size="10" fill="#2c3e50">nama = "Budi Santoso"</text>
+    <text x="25" y="122" font-family="Courier New, monospace" font-size="10" fill="#2c3e50">nim = "2101001"</text>
+    <text x="25" y="137" font-family="Courier New, monospace" font-size="10" fill="#2c3e50">jurusan = "Informatika"</text>
+    <text x="25" y="152" font-family="Courier New, monospace" font-size="10" fill="#2c3e50">ipk = 3.75</text>
+  </g>
+  
+  <!-- OBJECT 2 -->
+  <g transform="translate(420, 290)">
+    <rect x="0" y="0" width="230" height="185" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="3"/>
+    <rect x="0" y="0" width="230" height="40" rx="10" fill="#f39c12"/>
+    <rect x="0" y="30" width="230" height="15" fill="#f39c12"/>
+    
+    <text x="115" y="27" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">mhs2 : Mahasiswa</text>
+    <text x="115" y="55" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f39c12">(Object 2)</text>
+    
+    <rect x="15" y="70" width="200" height="100" rx="5" fill="white" stroke="#bdc3c7"/>
+    <text x="115" y="87" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">Data Instance:</text>
+    <text x="25" y="107" font-family="Courier New, monospace" font-size="10" fill="#2c3e50">nama = "Ani Lestari"</text>
+    <text x="25" y="122" font-family="Courier New, monospace" font-size="10" fill="#2c3e50">nim = "2101002"</text>
+    <text x="25" y="137" font-family="Courier New, monospace" font-size="10" fill="#2c3e50">jurusan = "Sistem Info"</text>
+    <text x="25" y="152" font-family="Courier New, monospace" font-size="10" fill="#2c3e50">ipk = 3.85</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(680, 100)">
+    <rect x="0" y="0" width="200" height="150" rx="8" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="100" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">LEGEND</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#bdc3c7"/>
+    
+    <rect x="20" y="50" width="20" height="15" fill="#3498db"/>
+    <text x="50" y="62" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Class (Blueprint)</text>
+    
+    <rect x="20" y="75" width="20" height="15" fill="#1abc9c"/>
+    <text x="50" y="87" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Object (Instance)</text>
+    
+    <text x="20" y="110" font-family="Courier New, monospace" font-size="10" fill="#8e44ad">- private</text>
+    <text x="20" y="125" font-family="Courier New, monospace" font-size="10" fill="#27ae60">+ public</text>
+    <text x="20" y="140" font-family="Courier New, monospace" font-size="10" fill="#e67e22"># protected</text>
+  </g>
+  
+  <!-- Note -->
+  <g transform="translate(680, 280)">
+    <rect x="0" y="0" width="200" height="100" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+    <text x="100" y="25" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#c0392b">PENTING!</text>
+    <text x="15" y="45" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">• Class = template/cetakan</text>
+    <text x="15" y="60" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">• Object = hasil cetakan</text>
+    <text x="15" y="75" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">• Setiap object punya data</text>
+    <text x="15" y="90" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">  sendiri-sendiri</text>
+  </g>
+</svg>
