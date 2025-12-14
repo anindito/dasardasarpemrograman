@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="readGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e"/>
+      <stop offset="100%" style="stop-color:#38ef7d"/>
+    </linearGradient>
+    <linearGradient id="writeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ee0979"/>
+      <stop offset="100%" style="stop-color:#ff6a00"/>
+    </linearGradient>
+    <linearGradient id="appendGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb"/>
+      <stop offset="100%" style="stop-color:#f5576c"/>
+    </linearGradient>
+    <linearGradient id="binaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">Mode Pembukaan File dalam C++</text>
+  
+  <!-- Header -->
+  <rect x="300" y="70" width="300" height="50" rx="10" fill="url(#headerGrad)" filter="url(#shadow)"/>
+  <text x="450" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">ios::mode</text>
+  
+  <!-- Connection Lines -->
+  <line x1="450" y1="120" x2="450" y2="150" stroke="#666" stroke-width="2"/>
+  <line x1="100" y1="150" x2="800" y2="150" stroke="#666" stroke-width="2"/>
+  <line x1="100" y1="150" x2="100" y2="180" stroke="#666" stroke-width="2"/>
+  <line x1="270" y1="150" x2="270" y2="180" stroke="#666" stroke-width="2"/>
+  <line x1="450" y1="150" x2="450" y2="180" stroke="#666" stroke-width="2"/>
+  <line x1="630" y1="150" x2="630" y2="180" stroke="#666" stroke-width="2"/>
+  <line x1="800" y1="150" x2="800" y2="180" stroke="#666" stroke-width="2"/>
+  
+  <!-- ios::in -->
+  <rect x="25" y="180" width="150" height="140" rx="10" fill="url(#readGrad)" filter="url(#shadow)"/>
+  <text x="100" y="210" font-family="monospace" font-size="14" font-weight="bold" fill="white" text-anchor="middle">ios::in</text>
+  <line x1="40" y1="225" x2="160" y2="225" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="100" y="250" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Input (Read)</text>
+  <text x="100" y="275" font-family="Arial, sans-serif" font-size="10" fill="#e0ffe0" text-anchor="middle">Membuka file</text>
+  <text x="100" y="290" font-family="Arial, sans-serif" font-size="10" fill="#e0ffe0" text-anchor="middle">untuk dibaca</text>
+  <text x="100" y="310" font-family="Arial, sans-serif" font-size="9" fill="#c0ffc0" text-anchor="middle">Default: ifstream</text>
+  
+  <!-- ios::out -->
+  <rect x="195" y="180" width="150" height="140" rx="10" fill="url(#writeGrad)" filter="url(#shadow)"/>
+  <text x="270" y="210" font-family="monospace" font-size="14" font-weight="bold" fill="white" text-anchor="middle">ios::out</text>
+  <line x1="210" y1="225" x2="330" y2="225" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="270" y="250" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Output (Write)</text>
+  <text x="270" y="275" font-family="Arial, sans-serif" font-size="10" fill="#ffe0e0" text-anchor="middle">Membuka file</text>
+  <text x="270" y="290" font-family="Arial, sans-serif" font-size="10" fill="#ffe0e0" text-anchor="middle">untuk ditulis</text>
+  <text x="270" y="310" font-family="Arial, sans-serif" font-size="9" fill="#ffc0c0" text-anchor="middle">Default: ofstream</text>
+  
+  <!-- ios::app -->
+  <rect x="375" y="180" width="150" height="140" rx="10" fill="url(#appendGrad)" filter="url(#shadow)"/>
+  <text x="450" y="210" font-family="monospace" font-size="14" font-weight="bold" fill="white" text-anchor="middle">ios::app</text>
+  <line x1="390" y1="225" x2="510" y2="225" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="450" y="250" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Append</text>
+  <text x="450" y="275" font-family="Arial, sans-serif" font-size="10" fill="#ffe0f0" text-anchor="middle">Menulis di akhir</text>
+  <text x="450" y="290" font-family="Arial, sans-serif" font-size="10" fill="#ffe0f0" text-anchor="middle">file (tidak hapus)</text>
+  <text x="450" y="310" font-family="Arial, sans-serif" font-size="9" fill="#ffc0e0" text-anchor="middle">Log files</text>
+  
+  <!-- ios::binary -->
+  <rect x="555" y="180" width="150" height="140" rx="10" fill="url(#binaryGrad)" filter="url(#shadow)"/>
+  <text x="630" y="210" font-family="monospace" font-size="14" font-weight="bold" fill="white" text-anchor="middle">ios::binary</text>
+  <line x1="570" y1="225" x2="690" y2="225" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="630" y="250" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Binary Mode</text>
+  <text x="630" y="275" font-family="Arial, sans-serif" font-size="10" fill="#e0f0ff" text-anchor="middle">File biner</text>
+  <text x="630" y="290" font-family="Arial, sans-serif" font-size="10" fill="#e0f0ff" text-anchor="middle">(bukan teks)</text>
+  <text x="630" y="310" font-family="Arial, sans-serif" font-size="9" fill="#c0e0ff" text-anchor="middle">Images, data</text>
+  
+  <!-- ios::trunc -->
+  <rect x="725" y="180" width="150" height="140" rx="10" fill="#ff7043" filter="url(#shadow)"/>
+  <text x="800" y="210" font-family="monospace" font-size="14" font-weight="bold" fill="white" text-anchor="middle">ios::trunc</text>
+  <line x1="740" y1="225" x2="860" y2="225" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="800" y="250" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Truncate</text>
+  <text x="800" y="275" font-family="Arial, sans-serif" font-size="10" fill="#ffe0d0" text-anchor="middle">Hapus isi file</text>
+  <text x="800" y="290" font-family="Arial, sans-serif" font-size="10" fill="#ffe0d0" text-anchor="middle">yang sudah ada</text>
+  <text x="800" y="310" font-family="Arial, sans-serif" font-size="9" fill="#ffc0b0" text-anchor="middle">Default w/ out</text>
+  
+  <!-- Kombinasi Example -->
+  <rect x="150" y="360" width="600" height="120" rx="10" fill="#f5f5f5" stroke="#ddd" stroke-width="2"/>
+  <text x="450" y="390" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Contoh Kombinasi Mode:</text>
+  
+  <text x="180" y="420" font-family="monospace" font-size="12" fill="#1976d2">fstream file("data.txt", ios::in | ios::out);</text>
+  <text x="180" y="440" font-family="Arial, sans-serif" font-size="10" fill="#666">→ Buka untuk baca DAN tulis</text>
+  
+  <text x="180" y="465" font-family="monospace" font-size="12" fill="#1976d2">ofstream file("log.txt", ios::out | ios::app);</text>
+  <text x="180" y="485" font-family="Arial, sans-serif" font-size="10" fill="#666">→ Tulis di akhir file tanpa menghapus isi sebelumnya</text>
+</svg>
