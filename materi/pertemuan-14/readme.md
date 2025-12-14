@@ -1,5 +1,5 @@
 # BAB 14: FILE HANDLING DAN EXCEPTION HANDLING
-
+[Slide](https://anindito.github.io/pertemuan-14/)
 ## 14.1 Pendahuluan
 
 Selamat datang di pertemuan keempat belas mata kuliah Dasar-Dasar Pemrograman. Hingga saat ini, semua program yang kita buat menyimpan data hanya di dalam memori komputer (RAM). Ketika program berakhir, semua data yang tersimpan akan hilang. Pada pertemuan ini, kita akan mempelajari cara menyimpan dan membaca data secara permanen menggunakan file, serta bagaimana menangani kesalahan (error) yang mungkin terjadi selama proses tersebut.
