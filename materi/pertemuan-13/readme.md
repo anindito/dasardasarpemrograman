@@ -1,5 +1,5 @@
 # BAB 13: PENGENALAN PEMROGRAMAN BERORIENTASI OBJEK
-
+[Slide](https://anindito.github.io/pertemuan-13/)
 ## 13.1 Pendahuluan
 
 Selamat datang di pertemuan ketiga belas mata kuliah Dasar-Dasar Pemrograman. Hingga saat ini, kita telah mempelajari pemrograman dengan pendekatan prosedural, dimana program kita terdiri dari fungsi-fungsi yang memanipulasi data secara terpisah. Pada pertemuan ini, kita akan berkenalan dengan paradigma pemrograman yang berbeda namun sangat powerful: Pemrograman Berorientasi Objek (Object-Oriented Programming atau OOP).
