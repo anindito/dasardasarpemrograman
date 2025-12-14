@@ -18,6 +18,8 @@ C++ menggunakan konsep stream untuk berkomunikasi dengan file. Stream dapat diba
 
 Untuk bekerja dengan file, C++ menyediakan library `<fstream>` yang berisi tiga class utama. Class `ifstream` (input file stream) digunakan untuk membaca data dari file. Class `ofstream` (output file stream) digunakan untuk menulis data ke file. Class `fstream` (file stream) merupakan class yang paling fleksibel karena dapat digunakan untuk membaca maupun menulis file.
 
+![Diagram Konsep Stream dalam C++](images/stream_concept.svg)
+
 *Gambar 14.1: Diagram konsep stream dalam C++. Gambar menunjukkan aliran data dari keyboard melalui cin ke program, dari program melalui cout ke monitor, dari file melalui ifstream ke program, dan dari program melalui ofstream ke file.*
 
 ### 14.2.2 Jenis-Jenis File
@@ -104,6 +106,10 @@ int main() {
 Saat membuka file, kita dapat menentukan mode pembukaan yang mengatur bagaimana file tersebut akan diakses. Mode-mode ini didefinisikan sebagai konstanta dalam class ios dan dapat dikombinasikan menggunakan operator bitwise OR (|).
 
 Mode `ios::in` membuka file untuk operasi input (membaca). Mode `ios::out` membuka file untuk operasi output (menulis) dan akan menghapus isi file yang sudah ada. Mode `ios::app` (append) membuka file untuk menulis di akhir file tanpa menghapus isi yang sudah ada. Mode `ios::binary` membuka file dalam mode biner, bukan mode teks. Mode `ios::ate` (at end) menempatkan posisi baca/tulis di akhir file saat pertama kali dibuka. Mode `ios::trunc` (truncate) menghapus isi file yang sudah ada saat dibuka.
+
+![Diagram Mode Pembukaan File](images/file_modes.svg)
+
+*Gambar 14.3: Diagram mode pembukaan file dalam C++. Setiap mode memiliki fungsi spesifik dan dapat dikombinasikan menggunakan operator bitwise OR (|).*
 
 ```cpp
 // Demonstrasi berbagai mode pembukaan file
@@ -738,6 +744,8 @@ Exception adalah situasi abnormal atau tidak terduga yang terjadi saat program b
 Sebelum adanya exception handling, programmer biasanya menggunakan return code atau flag untuk menandai error. Pendekatan ini memiliki beberapa kelemahan. Pertama, kode pengecekan error bercampur dengan logika program utama sehingga sulit dibaca. Kedua, programmer bisa lupa mengecek return code. Ketiga, sulit untuk propagate error ke caller function.
 
 Exception handling menyediakan mekanisme yang lebih terstruktur dan elegan untuk menangani situasi error. Dengan exception handling, kode penanganan error dipisahkan dari logika normal, membuat program lebih mudah dibaca dan di-maintain.
+
+![Diagram Alur Exception Handling](images/exception_flow.svg)
 
 *Gambar 14.2: Diagram alur exception handling. Gambar menunjukkan normal execution flow yang dapat terganggu oleh exception, kemudian ditangkap oleh catch block untuk penanganan error, sebelum program melanjutkan atau terminasi.*
 
