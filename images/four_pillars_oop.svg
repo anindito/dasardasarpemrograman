@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">Empat Pilar Pemrograman Berorientasi Objek</text>
+  
+  <!-- OOP Center Circle -->
+  <circle cx="400" cy="270" r="60" fill="#3498db" stroke="#2980b9" stroke-width="3"/>
+  <text x="400" y="265" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">OOP</text>
+  <text x="400" y="285" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Object-Oriented</text>
+  
+  <!-- Encapsulation Pillar -->
+  <g transform="translate(100, 120)">
+    <rect x="0" y="0" width="150" height="180" rx="10" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="75" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">ENCAPSULATION</text>
+    <line x1="20" y1="45" x2="130" y2="45" stroke="white" stroke-width="1"/>
+    <text x="75" y="70" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">Menyembunyikan</text>
+    <text x="75" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">detail internal</text>
+    <text x="75" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Data Hiding</text>
+    <text x="75" y="130" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Getter/Setter</text>
+    <text x="75" y="150" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Access Control</text>
+    <text x="75" y="170" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Validasi Data</text>
+  </g>
+  
+  <!-- Arrow from Encapsulation to center -->
+  <path d="M 250 210 L 340 240" stroke="#c0392b" stroke-width="2" fill="none" marker-end="url(#arrowRed)"/>
+  
+  <!-- Abstraction Pillar -->
+  <g transform="translate(550, 120)">
+    <rect x="0" y="0" width="150" height="180" rx="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <text x="75" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">ABSTRACTION</text>
+    <line x1="20" y1="45" x2="130" y2="45" stroke="white" stroke-width="1"/>
+    <text x="75" y="70" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">Menyederhanakan</text>
+    <text x="75" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">kompleksitas</text>
+    <text x="75" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Interface</text>
+    <text x="75" y="130" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Essential Features</text>
+    <text x="75" y="150" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Hide Implementation</text>
+    <text x="75" y="170" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Simplify Usage</text>
+  </g>
+  
+  <!-- Arrow from Abstraction to center -->
+  <path d="M 550 210 L 460 240" stroke="#8e44ad" stroke-width="2" fill="none" marker-end="url(#arrowPurple)"/>
+  
+  <!-- Inheritance Pillar -->
+  <g transform="translate(100, 320)">
+    <rect x="0" y="0" width="150" height="180" rx="10" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+    <text x="75" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">INHERITANCE</text>
+    <line x1="20" y1="45" x2="130" y2="45" stroke="white" stroke-width="1"/>
+    <text x="75" y="70" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">Mewarisi dari</text>
+    <text x="75" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">class lain</text>
+    <text x="75" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Code Reuse</text>
+    <text x="75" y="130" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Base/Derived</text>
+    <text x="75" y="150" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• extends</text>
+    <text x="75" y="170" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Hierarki Class</text>
+  </g>
+  
+  <!-- Arrow from Inheritance to center -->
+  <path d="M 250 350 L 340 300" stroke="#1e8449" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Polymorphism Pillar -->
+  <g transform="translate(550, 320)">
+    <rect x="0" y="0" width="150" height="180" rx="10" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+    <text x="75" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">POLYMORPHISM</text>
+    <line x1="20" y1="45" x2="130" y2="45" stroke="white" stroke-width="1"/>
+    <text x="75" y="70" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">Banyak bentuk</text>
+    <text x="75" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">perilaku</text>
+    <text x="75" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Virtual Functions</text>
+    <text x="75" y="130" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Override</text>
+    <text x="75" y="150" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Dynamic Binding</text>
+    <text x="75" y="170" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">• Flexibility</text>
+  </g>
+  
+  <!-- Arrow from Polymorphism to center -->
+  <path d="M 550 350 L 460 300" stroke="#d68910" stroke-width="2" fill="none" marker-end="url(#arrowOrange)"/>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8e44ad"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1e8449"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d68910"/>
+    </marker>
+  </defs>
+</svg>
