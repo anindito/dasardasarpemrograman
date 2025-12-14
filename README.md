@@ -5,7 +5,7 @@
 [![Credits](https://img.shields.io/badge/SKS-3-orange.svg)](https://github.com)
 [![Language](https://img.shields.io/badge/Language-C++-00599C.svg?logo=c%2B%2B)](https://github.com)
 
-> Repositori resmi silabus dan rencana pembelajaran mata kuliah **Dasar-Dasar Pemrograman** untuk Program Studi Informatika, Universitas Pertahanan Republik Indonesia.
+> Repositori resmi silabus dan rencana pembelajaran mata kuliah **Dasar-Dasar Pemrograman** untuk Program Studi Teknik Informatika/Ilmu Komputer, Universitas Pertahanan Indonesia.
 
 ---
 
@@ -13,6 +13,14 @@
 
 **Dasar-Dasar Pemrograman** adalah mata kuliah fundamental yang mengajarkan konsep pemrograman menggunakan bahasa C++. Mata kuliah ini dirancang untuk memberikan fondasi yang kuat dalam pemrograman prosedural, debugging, error handling, serta pengenalan pemrograman berorientasi objek.
 
+### 🎯 Keunggulan Silabus Ini
+
+- ✅ **Fokus pada Debugging & Error Handling** - Materi debugging dan exception handling mendapat porsi yang seimbang
+- ✅ **Exposure ke Platform Lain** - Arduino, Competitive Programming, Game Development
+- ✅ **Materi Struct** - Tipe data bentukan sebelum masuk OOP
+- ✅ **OOP Secukupnya** - Pengenalan OOP yang tepat untuk level dasar, detail di mata kuliah lanjutan
+- ✅ **File Handling Komprehensif** - Text dan binary files dengan proper error handling
+- ✅ **Praktis & Aplikatif** - Latihan dan contoh yang relevan dengan dunia nyata
 
 ---
 
@@ -25,6 +33,7 @@
 | **Semester** | 1 |
 | **SKS** | 3 (2 SKS Teori, 1 SKS Praktikum) |
 | **Bahasa Pemrograman** | C++ |
+| **IDE Utama** | Code::Blocks (dengan compiler MinGW GCC) |
 | **Prasyarat** | - |
 
 ---
@@ -68,10 +77,41 @@ Setelah menyelesaikan mata kuliah ini, mahasiswa diharapkan mampu:
 | 10 | Array Multidimensi | matrix operations, 2D arrays |
 | 11 | Pointer dan Memori Dinamis | pointer, new/delete, memory management |
 | 12 | **Struct, Union, dan Typedef** 🆕 | **user-defined types, struct, union** |
-| 13 | **C++ di Platform Lain** 🚀 | **Arduino, Competitive Programming, Games** |
-| 14 | **Pengenalan OOP** 📦 | **class, object, inheritance, polymorphism** |
-| 15 | **File Handling dan Exception Handling** 🛡️ | **file I/O, try-catch, error handling** |
+| 13 | **Pengenalan OOP** 📦 | **class, object, inheritance, polymorphism** |
+| 14 | **File Handling dan Exception Handling** 🛡️ | **file I/O, try-catch, error handling** |
+| 15 | **C++ di Platform Lain + Review UAS** 🚀📝 | **Arduino, Games, Build Tools + Latihan Review** |
 | 16 | **Ujian Akhir Semester (UAS)** | Evaluasi keseluruhan |
+
+---
+
+## 🌟 Highlight Materi
+
+### 🔧 Debugging & Exception Handling (CPMK 4)
+Materi ini mendapat perhatian khusus dengan 3 pertemuan:
+- **Pertemuan 7**: Debugging fundamentals, GDB, breakpoints
+- **Pertemuan 14**: Exception handling, try-catch, defensive programming
+- **Pertemuan 15**: IDE debugging (Code::Blocks, VS Code), Valgrind, static analysis
+
+### 🚀 C++ di Platform Lain + Review UAS (Pertemuan 15)
+Pertemuan dual purpose yang membahas:
+- **Bagian 1 - Materi Baru**: Penerapan C++ di berbagai domain
+  - **Arduino/Embedded**: Kontrol LED, sensor reading
+  - **Competitive Programming**: Fast I/O, algorithms
+  - **Game Development**: SDL/SFML basics
+  - **Build Systems**: CMake, Makefiles
+- **Bagian 2 - Review UAS**: Latihan komprehensif materi pertemuan 9-14
+  - Level 1: Array dan Pointer
+  - Level 2: OOP dan File Handling
+  - Level 3: Integrasi Penuh
+  - Q&A dan problem solving
+
+### 📦 Pengenalan OOP (Pertemuan 13)
+Fokus pada konsep dasar saja, tidak terlalu dalam:
+- Class dan Object
+- Encapsulation
+- Inheritance sederhana
+- Polymorphism dasar
+- ❌ Tidak membahas: operator overloading, friend functions, multiple inheritance
 
 ---
 
@@ -80,6 +120,30 @@ Setelah menyelesaikan mata kuliah ini, mahasiswa diharapkan mampu:
 1. **Deitel, P. J., & Deitel, H. M.** (2016). *C++ How to Program* (10th Edition). Pearson.
 2. **Savitch, W.** (2017). *Problem Solving with C++* (10th Edition). Pearson.
 3. **Stroustrup, B.** (2022). *Programming: Principles and Practice Using C++* (3rd Edition). Addison-Wesley Professional.
+
+---
+
+## 📊 Sistem Penilaian
+
+| Komponen | Bobot |
+|----------|-------|
+| Tugas dan Praktikum | 20% |
+| Ujian Tengah Semester (UTS) | 40% |
+| Ujian Akhir Semester (UAS) | 40% |
+
+### Kriteria Nilai
+
+| Nilai | Range |
+|-------|-------|
+| A | 85-100 |
+| A- | 80-84 |
+| B+ | 75-79 |
+| B | 70-74 |
+| B- | 65-69 |
+| C+ | 60-64 |
+| C | 55-59 |
+| D | 40-54 |
+| E | 0-39 |
 
 ---
 
@@ -97,12 +161,19 @@ Setelah menyelesaikan mata kuliah ini, mahasiswa diharapkan mampu:
 ```
 📁 silabus-ddp/
 ├── 📄 README.md                    # File ini
-├── 📄 silabus.md                   # Silabus lengkap
+├── 📄 Silabus_DDP_Revisi.md       # Silabus lengkap
 ├── 📁 materi/                      # (akan ditambahkan)
-    ├── 📁 pertemuan-01/
-    ├── 📁 pertemuan-02/
+│   ├── 📁 pertemuan-01/
+│   ├── 📁 pertemuan-02/
+│   └── ...
+├── 📁 contoh-program/              # (akan ditambahkan)
+│   ├── 📁 hello-world/
+│   ├── 📁 sorting/
+│   └── ...
+└── 📁 latihan/                     # (akan ditambahkan)
+    ├── 📁 array/
+    ├── 📁 pointer/
     └── ...
-
 ```
 
 ---
@@ -116,7 +187,7 @@ cd silabus-ddp
 ```
 
 ### 2️⃣ Baca Silabus Lengkap
-Buka file [`silabus.md`](silabus.md) untuk melihat detail lengkap setiap pertemuan.
+Buka file [`Silabus_DDP_Revisi.md`](Silabus_DDP_Revisi.md) untuk melihat detail lengkap setiap pertemuan.
 
 ### 3️⃣ Follow Updates
 Tekan tombol **⭐ Star** dan **👁️ Watch** untuk mendapatkan notifikasi update materi baru.
@@ -145,23 +216,51 @@ Tekan tombol **⭐ Star** dan **👁️ Watch** untuk mendapatkan notifikasi upd
 
 ---
 
+## 🆕 Changelog Silabus
+
+### Version 2.0 (2025)
+
+**Perubahan Major:**
+- 🆕 **Menambahkan Pertemuan 12**: Struct, Union, dan Typedef
+- 🆕 **Menambahkan Pertemuan 13**: Pengenalan OOP (dipadatkan dari 3 pertemuan)
+- 🆕 **Menambahkan Pertemuan 14**: File Handling dan Exception Handling
+- 🆕 **Menambahkan Pertemuan 15**: C++ di Platform Lain + Review UAS (dual purpose)
+- 🔧 **Memperkuat Debugging**: Menambahkan debugging tools di 3 pertemuan (7, 14, 15)
+- 🛡️ **Memperkuat Exception Handling**: Materi exception handling lebih komprehensif
+- ❌ **Menghilangkan STL**: Dipindahkan ke mata kuliah lanjutan
+- 🖥️ **IDE Utama**: Code::Blocks dengan compiler MinGW GCC
+
+**Perubahan CPMK:**
+- CPMK 4 (Baru): Debugging, error handling, exception handling
+- CPMK 5 (Dimodifikasi): File handling + konsep dasar OOP
+
+**Struktur Pertemuan Akhir:**
+- Pertemuan 1-7: Materi sebelum UTS
+- Pertemuan 8: UTS
+- Pertemuan 9-14: Materi setelah UTS
+- Pertemuan 15: C++ di Platform Lain + Review UAS (dual purpose)
+- Pertemuan 16: UAS
+
+**Total: 16 pertemuan** (termasuk UTS dan UAS)
+
+---
 
 ## 📞 Kontak
 
 **Dosen Pengampu:**  
-Anindito, S.H., CHFI  
-Universitas Pertahanan Indonesia
+Anindito, S.Kom., S.S., S.H., M.TI., CHFI  
+Universitas Pertahanan Republik Indonesia
 
 **Untuk pertanyaan terkait silabus:**
 - 📧 Email: [email dosen]
-- 💬 Forum diskusi: [Grup Telegram]
-- 🏫 Jam konsultasi: [07.30-15.30]
+- 💬 Forum diskusi: [link jika ada]
+- 🏫 Jam konsultasi: [jadwal konsultasi]
 
 ---
 
 ## 📜 Lisensi
 
-Materi kuliah ini digunakan untuk keperluan pendidikan di Universitas Pertahanan Republik Indonesia.
+Materi kuliah ini digunakan untuk keperluan pendidikan di Universitas Pertahanan Indonesia.
 
 ---
 
